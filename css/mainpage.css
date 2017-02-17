@@ -1,0 +1,14 @@
+.maincont{
+  text-align:   center;
+  padding-bottom:   20px;
+  color: #388E3C;
+}
+
+.text-center {
+	font-family: 'sansita', sans-serif;
+}
+@media only screen and (max-width: 300px){
+  .logo{
+    margin-top: 2px;
+  }
+}
