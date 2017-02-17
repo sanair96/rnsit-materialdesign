@@ -8,4 +8,5 @@ $(document).ready(function(){
       $(".dropNav").click(function(){
       	$(".innerNav").toggleClass("hidden");
       });
+      console.log(window.location);
 });
