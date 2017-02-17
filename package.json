@@ -1,0 +1,25 @@
+{
+  "name": "rnsit-materialdesign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanair96/rnsit-materialdesign.git"
+  },
+  "author": "sanair96",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanair96/rnsit-materialdesign/issues"
+  },
+  "homepage": "https://github.com/sanair96/rnsit-materialdesign#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "path": "^0.12.7",
+    "sw-precache": "^5.0.0",
+    "sw-toolbox": "^3.5.1"
+  }
+}
