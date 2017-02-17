@@ -59,34 +59,39 @@
 
      <!--mobile!--> 
       <ul class="side-nav" id="mobile-demo">
-        <li><a id="home" href="sass.html">Home</a></li>
-        <li><a id="aboutus" href="badges.html">About US</a></li>
-        <li><a id="contact" href="collapsible.html">Contact</a></li>
+        <li><a id="home" class="transfer" onclick="navig('home')" href="#!">Home</a></li>
+        <li><a id="aboutus" class="transfer" onclick="navig('aboutus')" href="#!">About US</a></li>
+        <li><a id="contact" class="transfer" onclick="navig('contact')" href="#!">Contact</a></li>
         <li><a class="dropNav" href="#!">Department</a></li>
          <li>      <div class="innerNav hidden">
-        <a href="" class="nava">BASIC SCIENCE DEPARTMENTS</a>
+        <a class="nava">BASIC SCIENCE DEPARTMENTS</a>
         <ul><li class=" nava divider"></li></ul>  
-        <a id="physics" class="nava" href="">Physics</a>
-        <a id="chemistry" class="nava" href="">Chemistry</a>
-        <a id="mathematics" class="nava" href="">Mathematics</a>
-        <a id="engineeringdept" class="nava " href="#!">ENGINEERING DEPARTMENTS</a>
+        <a id="physics" class="nava transfer" onclick="navig('physics')" href="">Physics</a>
+        <a id="chemistry" class="nava transfer" onclick="navig('chemistry')" href="">Chemistry</a>
+        <a id="mathematics" class="nava transfer" onclick="navig('maths')" href="">Mathematics</a>
+        <a id="engineeringdept" class="nava ">ENGINEERING DEPARTMENTS</a>
         <ul><li class=" nava divider"></li></ul>
-        <a id="cse" class="nava" href="#!">CSE</a>
-        <a id="ece" class="nava" href="#!">ECE</a>
-        <a id="eee" class="nava" href="#!">EEE</a>
-        <a id="ise" class="nava" href="#!">ISE</a>
-        <a id="eie" class="nava" href="#!">EIE</a>
-        <a id="mech" class="nava" href="#!">MECH</a>
-        <a id="pg" class="nava" href="">POST GRADUATION</a>
+        <a id="cse" class="nava transfer" onclick="navig('cse')" href="#!">CSE</a>
+        <a id="ece" class="nava transfer" onclick="navig('ece')" href="#!">ECE</a>
+        <a id="eee" class="nava transfer" onclick="navig('eee')" href="#!">EEE</a>
+        <a id="ise" class="nava transfer" onclick="navig('ise')" href="#!">ISE</a>
+        <a id="eie" class="nava transfer" onclick="navig('eie')" href="#!">EIE</a>
+        <a id="mech" class="nava transfer" onclick="navig('mech')" href="#!">MECH</a>
+        <a id="pg" class="nava transfer" onclick="navig('pg')" href="">POST GRADUATION</a>
         <ul><li  id=""class=" nava divider"></li></ul>
-        <a id="mba" class="nava" href="">MBA</a>
-        <a id="mca" class="nava" href="">MCA</a>
+        <a id="mba" class="nava transfer" onclick="navig('mba')" href="">MBA</a>
+        <a id="mca" class="nava transfer" onclick="navig('mca')" href="">MCA</a>
     
       </div></li>
   
     </ul>
     </div>
   </nav>   
+<!-- content part -->
+  <div id="filler">
+    
+  </div>
+<!-- content end -->
 <footer id="footer" class="page-footer">
           <div class="container">
             <div class="row">
@@ -114,9 +119,25 @@
         </footer>
 
          <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>         
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>    
+      <script src="js/promisepoly.js"></script>     
+      <script src="js/fetchpoly.js"></script>     
       <script src="js/index.js"></script>
-      <script type="text/javascript"></script>
+      <script type="text/javascript">
+        (function(){
+          if(!'serviceWorker' in navigator){
+            console.log('Service worker not available');
+            return;
+          }
+          navigator.serviceWorker.register('service-worker.js')
+          .then(reg =>{
+            console.log("Service Worker Registered");
+          })
+          .catch(err =>{
+            console.log(err);
+          });
+        })();
+      </script>
    </body>
 
    

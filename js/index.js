@@ -10,4 +10,18 @@ $(document).ready(function(){
       });
       
       var currPage = 'mainpage';
+
+      navig = function(data){
+      	alert(data+'.html');
+      	currPage = data;
+      	fetch(data+'.html')
+      	.then(data=>{
+      		return data.text();
+      	})
+      	.then(text=>{
+      		console.log(text);
+      		document.getElementById('filler').innerHTML=text;
+      	})
+      }
+
 });
