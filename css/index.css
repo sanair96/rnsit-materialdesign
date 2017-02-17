@@ -9,3 +9,13 @@
 	overflow-y: hidden !important;
 	width: 100px;
 }
+.nava{
+          display: block;
+          padding-left: 30px;
+
+}
+.hidden{
+          height: 0;
+          overflow: hidden;
+          transition: all 2s;
+}
