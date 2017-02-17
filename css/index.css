@@ -1,8 +1,14 @@
+body{
+  min-height: 100vh;
+}
+.side-nav{
+  z-index: 10000;
+}
 #footer
 {
 	width:100%;
-	position:absolute;
 	bottom:0;
+  z-index: 2000;
 
 }
 ::-webkit-scrollbar  {
@@ -16,6 +22,9 @@
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+#filler{
+  margin-bottom: 260px;
 }
 #dropdown1{
   width:230px !important;

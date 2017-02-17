@@ -5,6 +5,8 @@ $(document).ready(function(){
 	  	closeOnClick:false,
 	  	draggable:true});
 	  
+
+        
 	  	$('.dropdown-button').dropdown({
       inDuration: 300,
       outDuration: 225,
@@ -25,16 +27,20 @@ $(document).ready(function(){
       
 
       navig = function(data){
-      	alert(data+'.html');
-      	currPage = data;
-      	fetch(data+'.html')
-      	.then(data=>{
-      		return data.text();
-      	})
-      	.then(text=>{
-      		console.log(text);
-      		document.getElementById('filler').innerHTML=text;
-      	})
+      	// alert(data+'.html');
+      	// currPage = data;
+      	// fetch(data+'.html')
+      	// .then(data=>{
+      	// 	return data.text();
+      	// })
+      	// .then(text=>{
+      	// 	console.log(text);
+      		
+      	// })
+
+
+      	$('#filler').load(data+'.html');
+      	$('footer').css({"bottom":"0"});
       }
 
 });
