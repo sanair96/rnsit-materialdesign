@@ -1,3 +1,9 @@
+body{
+  min-height: 100vh;
+}
+.side-nav{
+  z-index: 10000;
+}
 #footer
 {
 	width:100%;
