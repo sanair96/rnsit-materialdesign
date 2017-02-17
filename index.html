@@ -1,167 +1,136 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>RNSIT</title>
+  <head>
+    <title>RNSIT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-
-      <link rel="stylesheet" type="text/css" href="css/index.css">
-   </head>
-   <body>
-<!-- News Modal Trigger -->
-  <a class="news waves-effect waves-light btn" href="#modal1">News</a>
-
-  <!-- News Modal Structure -->
-  <div id="modal1" class="modal bottom-sheet">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body>
+    <!-- News Modal Trigger -->
+    <a class="news waves-effect waves-light btn" href="#modal1">News</a>
+    <!-- News Modal Structure -->
+    <div id="modal1" class="modal bottom-sheet">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">cancel</a>
+      </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">cancel</a>
-    </div>
-  </div>
-
-<!--nav!-->
-   <nav class="nav-extended">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">RNSIT</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About US</a></li>
-        <li><a href="contact.html">Contact</a></li>
-
-         <!-- Dropdown Trigger -->
-     <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Department<i class="material-icons right">arrow_drop_down</i></a></li>
-
-        <!-- Dropdown Structure -->
-  <ul id="dropdown1" class="dropdown-content">
-    <li><a href="">BASIC SCIENCE DEPARTMENTS</a></li>
-    <li class="divider"></li>
-    <li><a href="">Physics</a></li>
-    <li><a href="">Chemistry</a></li>
-    <li><a href="">Mathematics</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">ENGINEERING DEPARTMENTS</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">CSE</a></li>
-    <li><a href="#!">ECE</a></li>
-    <li><a href="#!">EEE</a></li>
-    <li><a href="#!">ISE</a></li>
-    <li><a href="#!">EIE</a></li>
-    <li><a href="#!">MECH</a></li>
-    <li class="divider"></li>
-    <li><a href="">POST GRADUATION</a></li>
-    <li class="divider"></li>
-    <li><a href="">MBA</a></li>
-    <li><a href="">MCA</a></li>
-    </ul>
-  </ul>
-
-     <!--mobile!-->
-      <ul class="side-nav" id="mobile-demo">
-        <li><a id="home" class="transfer" onclick="navig('home')" href="#!">Home</a></li>
-        <li><a id="aboutus" class="transfer" onclick="navig('aboutus')" href="#!">About US</a></li>
-        <li><a id="contact" class="transfer" onclick="navig('contact')" href="#!">Contact</a></li>
-        <li><a class="dropNav" href="#!">Department</a></li>
-         <li>      <div class="innerNav hidden">
-        <a class="nava">BASIC SCIENCE DEPARTMENTS</a>
-        <ul><li class=" nava divider"></li></ul>  
-        <a id="physics" class="nava transfer" onclick="navig('physics')" href="">Physics</a>
-        <a id="chemistry" class="nava transfer" onclick="navig('chemistry')" href="">Chemistry</a>
-        <a id="mathematics" class="nava transfer" onclick="navig('maths')" href="">Mathematics</a>
-        <a id="engineeringdept" class="nava ">ENGINEERING DEPARTMENTS</a>
-        <ul><li class=" nava divider"></li></ul>
-        <a id="cse" class="nava transfer" onclick="navig('cse')" href="#!">CSE</a>
-        <a id="ece" class="nava transfer" onclick="navig('ece')" href="#!">ECE</a>
-        <a id="eee" class="nava transfer" onclick="navig('eee')" href="#!">EEE</a>
-        <a id="ise" class="nava transfer" onclick="navig('ise')" href="#!">ISE</a>
-        <a id="eie" class="nava transfer" onclick="navig('eie')" href="#!">EIE</a>
-        <a id="mech" class="nava transfer" onclick="navig('mech')" href="#!">MECH</a>
-        <a id="pg" class="nava transfer" onclick="navig('pg')" href="">POST GRADUATION</a>
-        <ul><li  id=""class=" nava divider"></li></ul>
-        <a id="mba" class="nava transfer" onclick="navig('mba')" href="">MBA</a>
-        <a id="mca" class="nava transfer" onclick="navig('mca')" href="">MCA</a>
-        <li><a href="sass.html">Home</a></li>
-        <li><a href="badges.html">About US</a></li>
-        <li><a href="collapsible.html">Contact</a></li>
-        <li><a class="dropNav" href="#!">Department</a></li>
-         <li>      <div class="innerNav hidden">
-        <a href="" class="nava">BASIC SCIENCE DEPARTMENTS</a>
-        <ul><li class=" nava divider"></li></ul>
-        <a class="nava" href="">Physics</a>
-        <a class="nava" href="">Chemistry</a>
-        <a class="nava" href="">Mathematics</a>
-        <a class="nava " href="#!">ENGINEERING DEPARTMENTS</a>
-        <ul><li class=" nava divider"></li></ul>
-        <a class="nava" href="#!">CSE</a>
-        <a class="nava" href="#!">ECE</a>
-        <a class="nava" href="#!">EEE</a>
-        <a class="nava" href="#!">ISE</a>
-        <a class="nava" href="#!">EIE</a>
-        <a class="nava" href="#!">MECH</a>
-        <a class="nava" href="">POST GRADUATION</a>
-        <ul><li class=" nava divider"></li></ul>
-        <a class="nava" href="">MBA</a>
-        <a class="nava" href="">MCA</a>
-      </div></li>
-    </ul>
-    </div>
-  </nav>   
-<!-- content part -->
-  <div id="filler">
-    
-  </div>
-<!-- content end -->
-<footer id="footer" class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
+    <!--nav!-->
+    <nav class="nav-extended">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">RNSIT</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About US</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Department<i class="material-icons right">arrow_drop_down</i></a></li>
+          <!-- Dropdown Structure -->
+          <ul id="dropdown1" class="dropdown-content">
+            <li><a href="">BASIC SCIENCE DEPARTMENTS</a></li>
+            <li class="divider"></li>
+            <li><a href="">Physics</a></li>
+            <li><a href="">Chemistry</a></li>
+            <li><a href="">Mathematics</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">ENGINEERING DEPARTMENTS</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">CSE</a></li>
+            <li><a href="#!">ECE</a></li>
+            <li><a href="#!">EEE</a></li>
+            <li><a href="#!">ISE</a></li>
+            <li><a href="#!">EIE</a></li>
+            <li><a href="#!">MECH</a></li>
+            <li class="divider"></li>
+            <li><a href="">POST GRADUATION</a></li>
+            <li class="divider"></li>
+            <li><a href="">MBA</a></li>
+            <li><a href="">MCA</a></li>
+          </ul>
+        </ul>
+        <!--mobile!-->
+        <ul class="side-nav" id="mobile-demo">
+          <li><a id="home" class="transfer" onclick="navig('home')" href="#!">Home</a></li>
+          <li><a id="aboutus" class="transfer" onclick="navig('aboutus')" href="#!">About US</a></li>
+          <li><a id="contact" class="transfer" onclick="navig('contact')" href="#!">Contact</a></li>
+          <li><a class="dropNav" href="#!">Department</a></li>
+          <li>      <div class="innerNav hidden">
+            <a class="nava">BASIC SCIENCE DEPARTMENTS</a>
+            <ul><li class=" nava divider"></li></ul>
+            <a id="physics" class="nava transfer" onclick="navig('physics')" href="">Physics</a>
+            <a id="chemistry" class="nava transfer" onclick="navig('chemistry')" href="">Chemistry</a>
+            <a id="mathematics" class="nava transfer" onclick="navig('maths')" href="">Mathematics</a>
+            <a id="engineeringdept" class="nava ">ENGINEERING DEPARTMENTS</a>
+            <ul><li class=" nava divider"></li></ul>
+            <a id="cse" class="nava transfer" onclick="navig('cse')" href="#!">CSE</a>
+            <a id="ece" class="nava transfer" onclick="navig('ece')" href="#!">ECE</a>
+            <a id="eee" class="nava transfer" onclick="navig('eee')" href="#!">EEE</a>
+            <a id="ise" class="nava transfer" onclick="navig('ise')" href="#!">ISE</a>
+            <a id="eie" class="nava transfer" onclick="navig('eie')" href="#!">EIE</a>
+            <a id="mech" class="nava transfer" onclick="navig('mech')" href="#!">MECH</a>
+            <a id="pg" class="nava transfer" onclick="navig('pg')" href="">POST GRADUATION</a>
+            <ul><li  id=""class=" nava divider"></li></ul>
+            <a id="mba" class="nava transfer" onclick="navig('mba')" href="">MBA</a>
+            <a id="mca" class="nava transfer" onclick="navig('mca')" href="">MCA</a>
+            </div></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- content part -->
+      <div id="filler">
+        
+      </div>
+      <!-- content end -->
+      <footer id="footer" class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
             </div>
           </div>
-          <div class="footer-copyright">
-            <div class="container">
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
             © 2014 Copyright Text
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
           </div>
-        </footer>
-
-         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>    
-      <script src="js/promisepoly.js"></script>     
-      <script src="js/fetchpoly.js"></script>     
+        </div>
+      </footer>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+      <script src="js/promisepoly.js"></script>
+      <script src="js/fetchpoly.js"></script>
       <script src="js/index.js"></script>
       <script type="text/javascript">
-        (function(){
-          if(!'serviceWorker' in navigator){
-            console.log('Service worker not available');
-            return;
-          }
-          navigator.serviceWorker.register('service-worker.js')
-          .then(reg =>{
-            console.log("Service Worker Registered");
-          })
-          .catch(err =>{
-            console.log(err);
-          });
-        })();
+      // (function(){
+      // if(!'serviceWorker' in navigator){
+      // console.log('Service worker not available');
+      // return;
+      // }
+      // navigator.serviceWorker.register('service-worker.js')
+      // .then(reg =>{
+      // console.log("Service Worker Registered");
+      // })
+      // .catch(err =>{
+      // console.log(err);
+      // });
+      // })();
       </script>
-   </body>
-
-
-   </html>
+    </body>
+  </html>
