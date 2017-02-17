@@ -26,59 +26,59 @@
         <a href="#" class="brand-logo">RNSIT</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About US</a></li>
+          <li><a onclick="navig('home');" href="#!">Home</a></li>
+          <li><a onclick="navig('aboutus');" href="#!">About US</a></li>
           <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Department<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a onclick="navig('contact');" href="#!">Contact</a></li>
           <!-- Dropdown Trigger -->
           
           <!-- Dropdown Structure -->
           <ul id="dropdown1" class="dropdown-content">
-            <li><a href="">BASIC SCIENCE DEPARTMENTS</a></li>
+            <li><a>BASIC SCIENCE DEPARTMENTS</a></li>
             <li class="divider"></li>
-            <li><a href="">Physics</a></li>
-            <li><a href="">Chemistry</a></li>
-            <li><a href="">Mathematics</a></li>
+            <li><a onclick="navig('physics');" href="">Physics</a></li>
+            <li><a onclick="navig('chemistry');" href="">Chemistry</a></li>
+            <li><a onclick="navig('mathematics');" href="">Mathematics</a></li>
             <li class="divider"></li>
-            <li><a href="#!">ENGINEERING DEPARTMENTS</a></li>
+            <li><a>ENGINEERING DEPARTMENTS</a></li>
             <li class="divider"></li>
-            <li><a href="#!">CSE</a></li>
-            <li><a href="#!">ECE</a></li>
-            <li><a href="#!">EEE</a></li>
-            <li><a href="#!">ISE</a></li>
-            <li><a href="#!">EIE</a></li>
-            <li><a href="#!">MECH</a></li>
+            <li><a onclick="navig('cse');" href="#!">CSE</a></li>
+            <li><a onclick="navig('ece');" href="#!">ECE</a></li>
+            <li><a onclick="navig('eee');" href="#!">EEE</a></li>
+            <li><a onclick="navig('ise');" href="#!">ISE</a></li>
+            <li><a onclick="navig('eie');" href="#!">EIE</a></li>
+            <li><a onclick="navig('mech');" href="#!">MECH</a></li>
             <li class="divider"></li>
-            <li><a href="">POST GRADUATION</a></li>
+            <li><a onclick="navig('pg');" href="">POST GRADUATION</a></li>
             <li class="divider"></li>
-            <li><a href="">MBA</a></li>
-            <li><a href="">MCA</a></li>
+            <li><a onclick="navig('mba');" href="">MBA</a></li>
+            <li><a onclick="navig('mca');" href="">MCA</a></li>
           </ul>
         </ul>
         <!--mobile!-->
         <ul class="side-nav" id="mobile-demo">
-          <li><a id="home" class="transfer" onclick="navig('home')" href="#!">Home</a></li>
-          <li><a id="aboutus" class="transfer" onclick="navig('aboutus')" href="#!">About US</a></li>
-          <li><a id="contact" class="transfer" onclick="navig('contact')" href="#!">Contact</a></li>
+          <li><a id="home" class="" onclick="navig('home')" href="#!">Home</a></li>
+          <li><a id="aboutus" class="" onclick="navig('aboutus')" href="#!">About US</a></li>
+          <li><a id="contact" class="" onclick="navig('contact')" href="#!">Contact</a></li>
           <li><a class="dropNav" href="#!">Department</a></li>
           <li>      <div class="innerNav hidden">
             <a class="nava">BASIC SCIENCE DEPARTMENTS</a>
             <ul><li class=" nava divider"></li></ul>
-            <a id="physics" class="nava transfer" onclick="navig('physics')" href="">Physics</a>
-            <a id="chemistry" class="nava transfer" onclick="navig('chemistry')" href="">Chemistry</a>
-            <a id="mathematics" class="nava transfer" onclick="navig('maths')" href="">Mathematics</a>
+            <a id="physics" class="nava " onclick="navig('physics')" href="">Physics</a>
+            <a id="chemistry" class="nava " onclick="navig('chemistry')" href="">Chemistry</a>
+            <a id="mathematics" class="nava " onclick="navig('maths')" href="">Mathematics</a>
             <a id="engineeringdept" class="nava ">ENGINEERING DEPARTMENTS</a>
             <ul><li class=" nava divider"></li></ul>
-            <a id="cse" class="nava transfer" onclick="navig('cse')" href="#!">CSE</a>
-            <a id="ece" class="nava transfer" onclick="navig('ece')" href="#!">ECE</a>
-            <a id="eee" class="nava transfer" onclick="navig('eee')" href="#!">EEE</a>
-            <a id="ise" class="nava transfer" onclick="navig('ise')" href="#!">ISE</a>
-            <a id="eie" class="nava transfer" onclick="navig('eie')" href="#!">EIE</a>
-            <a id="mech" class="nava transfer" onclick="navig('mech')" href="#!">MECH</a>
-            <a id="pg" class="nava transfer" onclick="navig('pg')" href="">POST GRADUATION</a>
+            <a id="cse" class="nava " onclick="navig('cse')" href="#!">CSE</a>
+            <a id="ece" class="nava " onclick="navig('ece')" href="#!">ECE</a>
+            <a id="eee" class="nava " onclick="navig('eee')" href="#!">EEE</a>
+            <a id="ise" class="nava " onclick="navig('ise')" href="#!">ISE</a>
+            <a id="eie" class="nava " onclick="navig('eie')" href="#!">EIE</a>
+            <a id="mech" class="nava " onclick="navig('mech')" href="#!">MECH</a>
+            <a id="pg" class="nava " onclick="navig('pg')" href="">POST GRADUATION</a>
             <ul><li  id=""class=" nava divider"></li></ul>
-            <a id="mba" class="nava transfer" onclick="navig('mba')" href="">MBA</a>
-            <a id="mca" class="nava transfer" onclick="navig('mca')" href="">MCA</a>
+            <a id="mba" class="nava " onclick="navig('mba')" href="">MBA</a>
+            <a id="mca" class="nava " onclick="navig('mca')" href="">MCA</a>
             </div></li>
           </ul>
         </div>
