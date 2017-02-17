@@ -5,3 +5,7 @@
 	bottom:0;
 
 }
+#dropdown1{
+	overflow-y: hidden !important;
+	width: 100px;
+}
