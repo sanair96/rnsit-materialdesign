@@ -1,5 +1,5 @@
 // Route #1
-global.toolbox.router.get('/(.*)', global.toolbox.cacheFirst, {
+toolbox.router.get('/(.*)', toolbox.cacheFirst, {
   cache: {
     name: 'googleapis',
     maxEntries: 20,
@@ -8,7 +8,8 @@ global.toolbox.router.get('/(.*)', global.toolbox.cacheFirst, {
 });
 
 // Route #2
-global.toolbox.router.get(/\.(?:png|gif|jpg)$/, global.toolbox.cacheFirst, {
+
+toolbox.router.get(/\.(?:png|gif|jpg)$/, toolbox.cacheFirst, {
   cache: {
     name: 'images-cache',
     maxEntries: 50

@@ -35,3 +35,7 @@
 .card-content {
 	font-family: comic sans ms;
 }
+
+.googleMap{
+  pointer-events:   none;
+}

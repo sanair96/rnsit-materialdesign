@@ -18,6 +18,7 @@
   "homepage": "https://github.com/sanair96/rnsit-materialdesign#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-rev-all": "^0.9.7",
     "path": "^0.12.7",
     "sw-precache": "^5.0.0",
     "sw-toolbox": "^3.5.1"
