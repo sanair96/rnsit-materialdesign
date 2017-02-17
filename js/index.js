@@ -8,6 +8,7 @@ $(document).ready(function(){
       $(".dropNav").click(function(){
       	$(".innerNav").toggleClass("hidden");
       });
-      
       var currPage = 'mainpage';
+
 });
+
