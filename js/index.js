@@ -40,6 +40,7 @@ $(document).ready(function(){
 
 
       	$('#filler').load(data+'.html');
+      	$('footer').css({"bottom":"0"});
       }
 
 });
