@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
 <meta name="RNSIT" content="RNSIT">
 <link rel="icon" sizes="192x192" href="images/logo.png">
- <splash src="images/prin.jpg"/>
+ <!-- <splash src="images/prin.jpg"></splash> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
     <link href="images/logo.png" rel="icon" type="image/png">
@@ -31,6 +31,7 @@
       </style>
    </head>
    <body>
+   <div>
    	 <nav class="nav-extended">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">RNSIT</a>
@@ -39,9 +40,12 @@
         <li><a id="home" onclick="navig('home');" href="#">Home</a></li>
         <li><a id="aboutus" onclick="navig('aboutus');" href="#">About US</a></li>
         <li><a id="contact" onclick="navig('contact');" href="#">Contact</a></li>
+        <!-- Dropdown Trigger -->
+ 	<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Departments<i class="material-icons right">arrow_drop_down</i></a></li>
+ 	<li><a class="dropdown-button" href="#!" data-activates="dropdown2">More<i class="material-icons right">arrow_drop_down</i></a></li>
+   
 
-         <!-- Dropdown Trigger -->
-     <li><a class="dropdown-button" data-activates="dropdown1">Department<i class="material-icons right">arrow_drop_down</i></a></li>
+
     
         <!-- Dropdown Structure -->
   <ul id="dropdown1" class="dropdown-content">
@@ -65,6 +69,17 @@
     <li><a id="mba" onclick="navig('mba');" href="">MBA</a></li>
     <li><a id="mca" onclick="navig('mca');" href="">MCA</a></li>
     </ul>
+  </ul>
+
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a id="cse" onclick="navig('alumni');" href="#!">ALUMNI</a></li>
+    <li><a id="ece" onclick="navig('admissions');" href="#!">ADMISSIONS</a></li>
+    <li><a id="eee" onclick="navig('placements');" href="#!">PLACEMENTS</a></li>
+    <li><a id="ise" onclick="navig('library');" href="#!">LIBRARY</a></li>
+    <li><a id="eie" onclick="navig('hostel');" href="#!">HOSTEL</a></li>
+    <li><a id="mech" onclick="navig('transport');" href="#!">TRANSPORT</a></li>
+    <li><a id="mba" onclick="navig('culture');" href="">SPORTS & CULTURE</a></li>
+    <li><a id="mca" onclick="navig('facilities');" href="">FACILITIES</a></li>
   </ul>
 
      <!--mobile!--> 
@@ -96,38 +111,69 @@
   
     </ul>
     </div>
-  </nav>   
+  </nav>
+  </div>   
   <div id="filler"></div>
-<footer id="footer" class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
+  <div>
+        <footer id="footer" class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l4 s12">
+            <h5 class="orange-text">RNSIT</h5>
+            <p class="white-text text-lighten-4">R.N. Shetty Institute of Technology (RNSIT) established in the year 2001, is the brain-child of the Group Chairman, Dr. R.N. Shetty.The Murudeshwar Group of Companies headed by Sri. R. N. Shetty is a leading player in many industries viz construction, manufacturing, hotel, automobile, power & IT services and education. The group has contributed significantly to the field of education.</p>
+            
+<button name="action" class="btn waves-effect waves-light black lighten-3" type="submit" alt="PayPal - The safer, easier way to pay online!">COMPIMENT
+</button>
+</form>
 
+          </div>
+          <div class="col l4 s12">
+            <h5 class="orange-text">HELP</h5>
+            <p class="grey-text text-lighten-4">
+            <ul>
+                  <li><a class="white-text text-lighten-3" href="#!">HOME</a></li>
+                  <li><a class="white-text text-lighten-3" href="#!">ABOUT</a></li>
+                  <li><a class="white-text text-lighten-3" href="#!">DEPT</a></li>
+                  <li><a class="white-text text-lighten-3" href="#!">COUSE</a></li></p>
+            </ul>
+            <a class="btn waves-effect waves-light black lighten-3" href="#!">Email</a>
+          </div>
+          <div class="col l4 s12" style="overflow: hidden;">
+            <h5 class="orange-text">Connect</h5>
+            <a href="https://www.facebook.com/pages/RNS-Institute-of-Technology/143512852331957"><image id="icon" src="images/facebook.svg"></image></a>
+            <a href="instagram/rnsit"><image id="icon" src="images/instagram.svg"></image></a>
+            <a href="twitter/rnsit"><image id="icon" src="images/twitter.svg"></image></a>
+            <a href="#!"><image id="icon" src="images/gmail.svg"></image></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        By dept of CSE
+        
+        </div>
+      </div>
+    </footer>
+</div>
          <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>         
       <script src="js/index.js"></script>
-      <script type="text/javascript"></script>
+      <script type="text/javascript">
+            (function(){
+      if(!'serviceWorker' in navigator)
+      {
+        alert('Service Worker not supported. Use a different browser');
+        return;
+      }
+      navigator.serviceWorker.register('serviceWorker.js')
+      .then(function(registration){
+        console.log('Registered Service Worker. Scope -'+registration.scope);
+      })
+      .catch(function(error){
+        console.log('Registration Failed. Error - '+error);
+      });
+    })();
+      </script>
    </body>
 
    
