@@ -9,6 +9,7 @@ body{
 	width:100%;
 	bottom:0;
   z-index: 2000;
+  background-color:#021B38;
 
 }
 ::-webkit-scrollbar  {
@@ -46,3 +47,13 @@ body{
     right:10px;
 }
 /*news*/
+#twit
+{
+  align-items: right;
+}
+#icon
+{
+  height: 100px;
+  width: 100px;
+  padding-left:25px;
+}
