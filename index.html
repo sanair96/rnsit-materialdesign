@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 	<head>
 		<title>The Materialize Cards Example</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -118,6 +119,9 @@
 	</body>
 	
 </html>
+=======
+
+>>>>>>> 7bbf6acb4a696000f4e5e2f1b0e26c4d29180e3d
    <head>
       <title>RNSIT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -260,9 +264,23 @@
          <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>         
       <script src="js/index.js"></script>
-      <script type="text/javascript"></script>
+      <script type="text/javascript">
+            (function(){
+      if(!'serviceWorker' in navigator)
+      {
+        alert('Service Worker not supported. Use a different browser');
+        return;
+      }
+      navigator.serviceWorker.register('serviceWorker.js')
+      .then(function(registration){
+        console.log('Registered Service Worker. Scope -'+registration.scope);
+      })
+      .catch(function(error){
+        console.log('Registration Failed. Error - '+error);
+      });
+    })();
+      </script>
    </body>
 
    
    </html>
->>>>>>> 864eb0d4485eac6c308120d500129944fc1c5ae8

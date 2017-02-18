@@ -23,11 +23,16 @@ $(document).ready(function(){
       $(".dropNav").click(function(){
       	$(".innerNav").toggleClass("hidden");
       });
-      var currPage = 'mainpage';
-      
+      currPage = 'mainpage';
+     
+//       window.onbeforeunload = function(e) {
+//   	  var dialogText = 'Dialog text here';
+//   e.returnValue = dialogText;
+//   return dialogText;
+// };
 
       navig = function(data){
-      	console.log(data);
+      	//console.log(data);
       	// alert(data+'.html');
       	// currPage = data;
       	// fetch(data+'.html')
@@ -39,7 +44,8 @@ $(document).ready(function(){
       		
       	// })
 
-
+      	currPage= data;
+      	console.log(currPage);
       	$('#filler').load(data+'.html');
       	$('footer').css({"bottom":"0"});
       }
