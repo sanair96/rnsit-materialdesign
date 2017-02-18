@@ -58,6 +58,15 @@ body{
   width: 100px;
   padding-left:25px;
 }
+@media screen and (max-width: 480px){
+  nav{
+    position: fixed;
+    top: 0px;
+    z-index: 999 !important;
+  }
+  footer{
+    display: hidden;
+}
 #fot
 {
   height:30%
