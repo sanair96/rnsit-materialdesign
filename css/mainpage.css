@@ -2,6 +2,9 @@
   text-align:   center;
   padding-bottom:   20px;
 }
+body,html{
+  height:   100%;
+}
 
 .logo {
   margin-top: 10px;
@@ -71,7 +74,7 @@ h1.heading{
 
 .map-container {
   width: 100%;
-  margin: 50px 0 3000px;
+  margin: 50px 0 10px;
 }
 .map-container iframe{
   width: 100%;
