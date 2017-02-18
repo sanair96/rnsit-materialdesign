@@ -27,6 +27,7 @@ $(document).ready(function(){
       
 
       navig = function(data){
+      	console.log(data);
       	// alert(data+'.html');
       	// currPage = data;
       	// fetch(data+'.html')
