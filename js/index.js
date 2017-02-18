@@ -37,6 +37,7 @@ var pageData = sessionStorage.getItem('1');
       	$('footer').css({"bottom":"0"});
       	$('.button-collapse').sideNav('hide');
       }
+      
 
 });
 
