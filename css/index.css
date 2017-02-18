@@ -9,6 +9,7 @@ body{
 	width:100%;
 	bottom:0;
   z-index: 2000;
+  height:20%;
   background-color:#021B38;
 
 }
@@ -56,4 +57,17 @@ body{
   height: 100px;
   width: 100px;
   padding-left:25px;
+}
+@media screen and (max-width: 480px){
+  nav{
+    position: fixed;
+    top: 0px;
+    z-index: 999 !important;
+  }
+  footer{
+    display: hidden;
+}
+#fot
+{
+  height:30%
 }

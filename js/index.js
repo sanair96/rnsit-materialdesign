@@ -11,9 +11,9 @@ $(document).ready(function(){
       inDuration: 300,
       outDuration: 225,
       constrainWidth: false, // Does not change width of dropdown to that of the activator
-      hover: true, // Activate on hover
+      hover: false, // Activate on hover
       gutter: 0, // Spacing from edge
-      belowOrigin: true, // Displays dropdown below the button
+      belowOrigin: false, // Displays dropdown below the button
       alignment: 'left', // Displays dropdown with edge aligned to the left of button
       stopPropagation: false // Stops event propagation
     }
@@ -25,25 +25,7 @@ $(document).ready(function(){
       });
       currPage = 'mainpage';
      
-//       window.onbeforeunload = function(e) {
-//   	  var dialogText = 'Dialog text here';
-//   e.returnValue = dialogText;
-//   return dialogText;
-// };
-
       navig = function(data){
-      	//console.log(data);
-      	// alert(data+'.html');
-      	// currPage = data;
-      	// fetch(data+'.html')
-      	// .then(data=>{
-      	// 	return data.text();
-      	// })
-      	// .then(text=>{
-      	// 	console.log(text);
-      		
-      	// })
-
       	currPage= data;
       	console.log(currPage);
       	$('#filler').load(data+'.html');
