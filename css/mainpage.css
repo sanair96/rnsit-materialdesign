@@ -2,28 +2,41 @@
   text-align:   center;
   padding-bottom:   20px;
 }
+
+
+.maincont{
+  margin-top: 70px;
+}
+
 body,html{
   height:   100%;
 }
-
+@media only screen and (max-width:768px){
 .logo {
   margin-top: 10px;
   width: 100px;
 }
-.chairman{
-  overflow: hidden;
-}
 
-h1.heading{
-  margin-top: -10px;
-}
 .header {
   font-family: 'Bree Serif', serif;
   color: #42A79E;
   font-weight: 1.2em;
 }
+
+}
+h1.heading{
+  margin-top: -10px;
+}
+.chairman{
+  overflow: hidden;
+}
+
+
 .heading{
   font-size: 6em;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .text-center {
 	font-family: 'Bree Serif', serif;
