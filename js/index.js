@@ -19,25 +19,20 @@ $(document).ready(function(){
       stopPropagation: false // Stops event propagation
     }
   );
+            if(sessionStorage.getItem('currentpage') === null ){
+                  sessionStorage.setItem('currentpage','home')
+            }
+            firstthing = sessionStorage.getItem('currentpage');
+            console.log(firstthing);
+            $('#filler').load(firstthing+'.html');
 
       $(".dropNav").click(function(){
       	$(".innerNav").toggleClass("hidden");
       });
-      currPage = 'mainpage';
-     $('#filler').load('home.html');
 
       navig = function(data){
-      	currPage= data;
-
-sessionStorage.setItem('1', currPage);
-
-var pageData = sessionStorage.getItem('1');
-      	console.log(pageData);
-      	$('#filler').load(pageData+'.html');
+            sessionStorage.setItem('currentpage',data);
+      	$('#filler').load(data+'.html');
       	$('footer').css({"bottom":"0"});
-      	$('.button-collapse').sideNav('hide');
       }
-
-});
-
 
