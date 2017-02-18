@@ -20,6 +20,12 @@ var initial_cache =['index.html','css/index.css','js/index.js'];
 				})
 		})
 	});
+
+	self.addEventListener('notificationclick', function(e) {
+  // TODO 2.8 - change the code to open a custom page
+  clients.openWindow('notify.html');
+  notification.close();
+});
 	self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.open(CURRENT_CACHE).then(function(cache) {
@@ -33,10 +39,6 @@ var initial_cache =['index.html','css/index.css','js/index.js'];
     })
   );
 });
-	self.addEventListener('notificationclick', function(e) {
+	
 
-  // TODO 2.8 - change the code to open a custom page
-  session
-  clients.openWindow('index.html');
-});
 })();
