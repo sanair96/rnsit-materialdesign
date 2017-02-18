@@ -24,11 +24,16 @@ $(document).ready(function(){
       	$(".innerNav").toggleClass("hidden");
       });
       currPage = 'mainpage';
-     
+     $('#filler').load('home.html');
+
       navig = function(data){
       	currPage= data;
-      	console.log(currPage);
-      	$('#filler').load(data+'.html');
+
+sessionStorage.setItem('1', currPage);
+
+var pageData = sessionStorage.getItem('1');
+      	console.log(pageData);
+      	$('#filler').load(pageData+'.html');
       	$('footer').css({"bottom":"0"});
       }
 
