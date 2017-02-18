@@ -1,13 +1,13 @@
 {
   "name": "RNSIT",
-  "icons": [
-    {
-      "src": "images/logo.png",
-      "sizes": "36x36",
-      "type": "image/png",
-      "density": 0.9
-    }
-  ],
+  // "icons": [
+  //   {
+  //     "src": "images/logo.png",
+  //     "sizes": "36x36",
+  //     "type": "image/png",
+  //     "density": 0.9
+  //   }
+  // ],
   "start_url": "/?utm_source=homescreen",
   "background_color": "#0099ff",
   "Theme_color": "#0099ff",
