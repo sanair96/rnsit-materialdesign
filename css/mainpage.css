@@ -1,11 +1,31 @@
 .maincont{
   text-align:   center;
   padding-bottom:   20px;
-  color: #388E3C;
 }
 
+.logo {
+  margin-top: 10px;
+  width: 100px;
+}
+.chairman{
+  overflow: hidden;
+}
+
+h1.heading{
+  margin-top: -10px;
+}
+.header {
+  font-family: 'Bree Serif', serif;
+  color: #42A79E;
+  font-weight: 1.2em;
+}
+.heading{
+  font-size: 6em;
+}
 .text-center {
-	font-family: 'sansita', sans-serif;
+	font-family: 'Bree Serif', serif;
+  font-size: 4vh;
+  color: #0F6B63;
 }
 @media only screen and (max-width: 420px){
   .logo{
@@ -18,25 +38,47 @@
   width:  90%;
 }
 
+#about p{
+  margin-top: 20px;
+  width:  100%;
+  color: #18906C;
+  font-size: 3vh;
+}
+
+
+#about h3{
+  margin-top:   30px;
+  width:  100%;
+  font-family: 'Mada', sans-serif; 
+  color:  #0F6B63;
+}
+
+#about h6{
+  margin-top:   30px;
+  width:  100%;
+  font-family: 'Mada', sans-serif; 
+  color: #42A79E;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
-.card-reveal {
-	color: #004d40;
-	font-family: comic sans ms;
-	//overflow-y: hidden !important;
+
+
+.card-content p{
+  color: #36C247   !important;
 }
 
-.card-title {
-	text-align: center;
-	font-family: comic sans ms;
+.map-container {
+  width: 100%;
+  margin: 50px 0 3000px;
 }
-
-.card-content {
-	font-family: comic sans ms;
+.map-container iframe{
+  width: 100%;
+  display: block;
+  pointer-events: none;
+  position: relative; /* IE needs a position other than static */
 }
-
-.googleMap{
-  pointer-events:   none;
+.map-container iframe.clicked{
+  pointer-events: auto;
 }
-
