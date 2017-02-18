@@ -9,6 +9,7 @@ body{
 	width:100%;
 	bottom:0;
   z-index: 2000;
+  height:20%;
   background-color:#021B38;
 
 }
@@ -57,7 +58,6 @@ body{
   width: 100px;
   padding-left:25px;
 }
-
 @media screen and (max-width: 480px){
   nav{
     position: fixed;
@@ -66,5 +66,8 @@ body{
   }
   footer{
     display: hidden;
-  }
+}
+#fot
+{
+  height:30%
 }
