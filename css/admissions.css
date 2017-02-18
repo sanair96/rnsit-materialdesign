@@ -1,0 +1,22 @@
+h1 {
+	color: #009688 ;
+	font-family: 'Bree Serif', serif;
+}
+
+h4{
+	color: black;
+	font-family: 'Bree Serif', serif;
+}
+
+.text-justify {
+	color: #3e2723;
+}
+
+h5{
+	color: #3e2723;
+}
+
+i {
+	position: relative;
+	top: 5px;
+}
