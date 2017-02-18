@@ -25,11 +25,11 @@ $(document).ready(function(){
       });
       currPage = 'mainpage';
      
-//       window.onbeforeunload = function(e) {
-//   	  var dialogText = 'Dialog text here';
-//   e.returnValue = dialogText;
-//   return dialogText;
-// };
+      window.onbeforeunload = function(e) {
+  	  var dialogText = 'Dialog text here';
+  e.returnValue = dialogText;
+  return dialogText;
+};
 
       navig = function(data){
       	//console.log(data);
