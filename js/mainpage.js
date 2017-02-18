@@ -1,5 +1,4 @@
-(function($){
-  $(function(){
+$(document).ready(function(){
 
     $('.carousel').carousel();
       $('.slider').slider({full_width: true});
@@ -14,13 +13,10 @@
       stopPropagation: false // Stops event propagation
     }
   );
-     
-        
-  //  $('.carousel.carousel-slider').carousel({full_width: true});
-    //$('.carousel').carousel('set', 4);
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+     	  	$('.dropdown-button').on('mouseleave',function(){
+     	  		  		$('#dropdown1').removeClass('active');
+	  		$('#dropdown2').removeClass('active');
+	  	});
 
 $('.map-container').click(function(){
 			$(this).find('iframe').addClass('clicked')})
@@ -30,4 +26,6 @@ $('.map-container').click(function(){
 
 $(window).resize(function(){
   $('.chairman').height($('.director').height()); 
+});
+
 });

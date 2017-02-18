@@ -4,6 +4,10 @@ body{
 .side-nav{
   z-index: 10000;
 }
+.innerli :hover{
+  background: white !important;
+}
+
 #footer
 {
 	width:100%;
@@ -58,7 +62,7 @@ body{
   width: 100px;
   padding-left:25px;
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
   nav{
     position: fixed;
     top: 0px;
@@ -67,7 +71,4 @@ body{
   footer{
     display: hidden;
 }
-#fot
-{
-  height:30%
 }
