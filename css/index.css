@@ -1,5 +1,6 @@
 body{
   min-height: 100vh;
+  font-family: 'open-sans', sans-serif;
 }
 .side-nav{
   z-index: 10000;
@@ -8,14 +9,23 @@ body{
   background: white !important;
 }
 
+.innerNav{
+  padding: 0 15px 0 15px !important;
+}
+
 .brand-logo {
   margin-left: 20px;
 }
-
+.awes :hover{
+  background: white !important; 
+}
 .nav-wrapper{
   background-color: #021B38;
 }
 
+.side-nav li{
+  padding:0px !important;
+}
 #footer
 {
 	width:100%;
@@ -46,7 +56,9 @@ body{
 .nava{
           display: block;
           padding-left: 30px;
-
+}
+.nava :hover{
+            background:rgba(0,0,0,.2);
 }
 .hidden{
           height: 0;
@@ -59,16 +71,14 @@ body{
     bottom: 10px;
     right:10px;
 }
-
 /*news*/
 #twit
 {
   align-items: right;
 }
-#icon
+.icon
 {
-  height: 100px;
-  width: 100px;
+  width: 75px;
   padding-left:25px;
 }
 @media screen and (max-width: 768px){
@@ -79,5 +89,8 @@ body{
   }
   footer{
     display: hidden;
+}
+.icon{
+  width:50px;
 }
 }

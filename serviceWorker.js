@@ -19,6 +19,7 @@ var initial_cache =['index.html','css/index.css','js/index.js'];
 					cache.addAll(initial_cache);
 				})
 		})
+		console.log('Done caching');
 	});
 
 	self.addEventListener('notificationclick', function(e) {
