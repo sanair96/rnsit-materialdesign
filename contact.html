@@ -1,11 +1,11 @@
 <div class="container"> 
  <div class="row">
-    <form class="col s12">
+    <form class="col s12" name="contactform" method="post" action="send_my_email.php">
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
           <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">First Name</label>
+          <label for="icon_prefix first_name">First Name</label>
         </div>
         
       
@@ -13,14 +13,14 @@
         <div class="input-field col s6">
            <i class="material-icons prefix">account_circle</i>
           <input id="icon_telephone" type="text" class="validate">
-          <label for="icon_telephone">Last Name</label>
+          <label for="icon_telephone last_name">Last Name</label>
          </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
         <i class="material-icons prefix">phone</i>
-          <input id="password" type="tel" class="validate">
-          <label for="password">Telephone</label>
+          <input id="number" type="tel" class="validate">
+          <label for="icon_telephone telephone">Telephone</label>
         </div>
       
       
@@ -34,17 +34,18 @@
         <div class="input-field col s6">
         <i class="material-icons prefix">assignment_ind</i>
           <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Address</label>
+          <label for="textarea1 adddress">Address</label>
         </div>
       
       
         <div class="input-field col s6">
          <i class="material-icons prefix">message </i>
           <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Message</label>
+          <label for="textarea1 message">Message</label>
        </div>
       </div>
       </div>
+      <input  type="submit" class="btn waves-effect waves-light" value="Submit">
     </form>
   </div>
   </div>
