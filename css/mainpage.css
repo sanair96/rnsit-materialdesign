@@ -73,7 +73,7 @@ h1.heading{
   font-size: 4vh;
   color: #0F6B63;
 }
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 1000px){
   .logo{
     margin-top: 10px;
   }
@@ -87,23 +87,23 @@ h1.heading{
 #about p{
   margin-top: 20px;
   width:  100%;
-  color: #18906C;
+  /*color: #18906C;*/
   font-size: 3vh;
+  font-family: 'Bree Serif', serif;
 }
 
 
 #about h3{
   margin-top:   30px;
   width:  100%;
-  font-family: 'Mada', sans-serif; 
-  color:  #0F6B63;
+  font-family: 'Bree Serif', serif;
 }
 
 #about h6{
   margin-top:   30px;
   width:  100%;
-  font-family: 'Mada', sans-serif; 
-  color: #42A79E;
+ font-family: 'Bree Serif', serif;
+ color: black;
 }
 
 ::-webkit-scrollbar {
@@ -112,7 +112,7 @@ h1.heading{
 
 
 .card-content p{
-  color: #36C247   !important;
+  color: black   !important;
 }
 
 .map-container {

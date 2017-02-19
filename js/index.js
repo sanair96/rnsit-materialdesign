@@ -9,7 +9,14 @@ $(document).ready(function(){
 	  	$(".innerNav").slideUp("fast");
 	  	sessionStorage.setItem('slide',1);
 
+
       Materialize.toast('Allow notifications and add to home screen for the best experience', 4000)
+
+     $(".innerNav1").slideUp("fast");
+      sessionStorage.setItem('slide',1);
+
+
+     
 	  	$('.dropdown-button').dropdown({
       inDuration: 300,
       outDuration: 225,
@@ -38,10 +45,18 @@ $(document).ready(function(){
       				sessionStorage.setItem('slide',0);
       				$(".innerNav").slideDown("fast");
       			}
+          });
+      $(".dropNav1").click(function(){
+          // alert('hi');
+              if(sessionStorage.getItem('slide1') == 0){
+                $(".innerNav1").slideUp(300);
+                sessionStorage.setItem('slide1',1);        
+              }
+              else{
+              sessionStorage.setItem('slide1',0);
+              $(".innerNav1").slideDown("fast");
 
-
-
-
+}
       });
 
       navig = function(data){
