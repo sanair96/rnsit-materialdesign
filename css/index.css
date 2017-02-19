@@ -2,6 +2,10 @@ body{
   min-height: 100vh;
   font-family: 'open-sans', sans-serif;
 }
+
+.logo {
+    transition: all .4s;
+}
 .side-nav{
   z-index: 10000;
 }
@@ -14,6 +18,8 @@ body{
 }
 
 .brand-logo {
+  color: white;
+  padding-left: -10px;
   margin-left: 20px;
 }
 .awes :hover{
@@ -22,6 +28,8 @@ body{
 .nav-wrapper{
   background-color: #021B38;
 }
+
+
 
 .side-nav li{
   padding:0px !important;
@@ -93,4 +101,12 @@ body{
 .icon{
   width:50px;
 }
+.brand-logo {
+  color: white;
+  padding-left: 0px;
+}
+}
+.heading {
+  color: black;
+  font-family: 'Bree Serif', serif;
 }
