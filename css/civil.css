@@ -1,29 +1,23 @@
-h1
+h3
 {
 	color:#009688;
 	font-family: 'bree serif',serif;
+	max-width: 100vw;
 
 }
 #para
 {
+	font-family: 'open-sans',sans-serif;
 	color:#3e2723;
+}
 }
 #sub
 {
 	font-family: 'bree serif',serif;
 	color:#222222;
 }
-i
-{
-	position:relative;
-	top:5px;
-}
-#spara
-{
-	font-size: 3vh;
-}
 @media screen and (max-width: 768px){
-  h1{
+  h3{
    margin-top:75px;
   }
   footer{
@@ -31,5 +25,3 @@ i
 }
 
 }
-
-
