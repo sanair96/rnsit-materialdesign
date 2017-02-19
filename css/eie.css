@@ -1,0 +1,25 @@
+h3
+{
+	color:#009688;
+	font-family: 'bree serif',serif;
+}
+#para
+{
+	font-family: 'open-sans',sans-serif;
+	color:#3e2723;
+}
+}
+#sub
+{
+	font-family: 'bree serif',serif;
+	color:#222222;
+}
+@media screen and (max-width: 768px){
+  h1{
+    position: fixed;
+    top: 0px;
+}
+#side-nav{
+	z-index: 3000 !important;
+}
+}
