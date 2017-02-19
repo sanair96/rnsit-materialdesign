@@ -1,15 +1,18 @@
-h1 {
+h4{
 	color: #009688 ;
 	font-family: 'Bree Serif', serif;
 }
 
-h4{
+h5{
 	color: black;
 	font-family: 'Bree Serif', serif;
 }
 
 .text-justify {
 	color: #3e2723;
+}
+body{
+	text-align:justify;
 }
 
 h5{
@@ -19,4 +22,13 @@ h5{
 i {
 	position: relative;
 	top: 5px;
+}
+@media screen and (max-width: 768px){
+  h4{
+   margin-top:75px;
+  }
+  footer{
+    display: hidden;
+}
+
 }

@@ -8,6 +8,10 @@ h1
 {
 	color:#3e2723;
 }
+p
+{
+	text-align: justify;
+}
 #sub
 {
 	font-family: 'bree serif',serif;

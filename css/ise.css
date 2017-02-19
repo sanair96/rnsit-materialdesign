@@ -10,6 +10,13 @@ h3
 	font-family: 'open-sans',sans-serif;
 	color:#3e2723;
 }
+<<<<<<< HEAD
+=======
+p
+{
+	text-align: justify;
+}
+>>>>>>> ccfe07e6859dc454bdedfd74e6680f842568c5cf
 #sub
 {
 	font-family: 'bree serif',serif;

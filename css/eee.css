@@ -10,6 +10,9 @@ h3
 	font-family: 'open-sans',sans-serif;
 	color:#3e2723;
 }
+p
+{
+	text-align: justify;
 }
 #sub
 {
