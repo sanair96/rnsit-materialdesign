@@ -1,4 +1,4 @@
-h3
+h4
 {
 	color:#009688;
 	font-family: 'bree serif',serif;
@@ -15,11 +15,11 @@ h3
 	color:#222222;
 }
 @media screen and (max-width: 768px){
-  h1{
-    position: fixed;
-    top: 0px;
+  h4{
+   margin-top:75px;
+  }
+  footer{
+    display: hidden;
 }
-#side-nav{
-	z-index: 3000 !important;
-}
+
 }

@@ -14,3 +14,12 @@ h1
 	font-family: 'bree serif',serif;
 	
 }
+@media screen and (max-width: 768px){
+  h1{
+   margin-top:75px;
+  }
+  footer{
+    display: hidden;
+}
+
+}

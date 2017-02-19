@@ -1,8 +1,17 @@
-h1 {
+h4{
 	color: #009688 ;
 	font-family: 'Bree Serif', serif;
 }
 
 .striped {
 	color: #3e2723;
+}
+@media screen and (max-width: 768px){
+  h4{
+   margin-top:75px;
+  }
+  footer{
+    display: hidden;
+}
+
 }
