@@ -9,6 +9,10 @@ $(document).ready(function(){
 	  	$(".innerNav").slideUp("fast");
 	  	sessionStorage.setItem('slide',1);
 
+     $(".innerNav1").slideUp("fast");
+      sessionStorage.setItem('slide',1);
+
+
       Materialize.toast('I am a toast!', 4000)
 	  	$('.dropdown-button').dropdown({
       inDuration: 300,
@@ -38,10 +42,18 @@ $(document).ready(function(){
       				sessionStorage.setItem('slide',0);
       				$(".innerNav").slideDown("fast");
       			}
+          });
+      $(".dropNav1").click(function(){
+          // alert('hi');
+              if(sessionStorage.getItem('slide1') == 0){
+                $(".innerNav1").slideUp(300);
+                sessionStorage.setItem('slide1',1);        
+              }
+              else{
+              sessionStorage.setItem('slide1',0);
+              $(".innerNav1").slideDown("fast");
 
-
-
-
+}
       });
 
       navig = function(data){
