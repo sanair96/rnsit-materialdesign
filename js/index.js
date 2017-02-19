@@ -5,9 +5,11 @@ $(document).ready(function(){
 	  	edge:'left',
 	  	closeOnClick:false,
 	  	draggable:true});
-	  
 
-        
+	  	$(".innerNav").slideUp("fast");
+	  	sessionStorage.setItem('slide',1);
+
+      Materialize.toast('I am a toast!', 4000)
 	  	$('.dropdown-button').dropdown({
       inDuration: 300,
       outDuration: 225,
@@ -27,7 +29,19 @@ $(document).ready(function(){
             $('#filler').load(firstthing+'.html');
 
       $(".dropNav").click(function(){
-      	$(".innerNav").toggleClass("hidden");
+      		// alert('hi');
+      				if(sessionStorage.getItem('slide') == 0){
+      					$(".innerNav").slideUp(300);
+      					sessionStorage.setItem('slide',1);				
+      				}
+      				else{
+      				sessionStorage.setItem('slide',0);
+      				$(".innerNav").slideDown("fast");
+      			}
+
+
+
+
       });
 
       navig = function(data){
