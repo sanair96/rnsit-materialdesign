@@ -35,7 +35,7 @@ var pageData = sessionStorage.getItem('1');
       	console.log(pageData);
       	$('#filler').load(pageData+'.html');
       	$('footer').css({"bottom":"0"});
-      	$('.button-collapse').sideNav('hide');
+      	$('.dropdown-button').dropdown('close');
       }
 
 });
