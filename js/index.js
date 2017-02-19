@@ -19,25 +19,58 @@ $(document).ready(function(){
       stopPropagation: false // Stops event propagation
     }
   );
+            if(sessionStorage.getItem('currentpage') === null ){
+                  sessionStorage.setItem('currentpage','home')
+            }
+            firstthing = sessionStorage.getItem('currentpage');
+            console.log(firstthing);
+            $('#filler').load(firstthing+'.html');
 
       $(".dropNav").click(function(){
       	$(".innerNav").toggleClass("hidden");
       });
-      currPage = 'mainpage';
-     $('#filler').load('home.html');
 
       navig = function(data){
-      	currPage= data;
-
-sessionStorage.setItem('1', currPage);
-
-var pageData = sessionStorage.getItem('1');
-      	console.log(pageData);
-      	$('#filler').load(pageData+'.html');
-      	$('footer').css({"bottom":"0"});
-      	$('.button-collapse').sideNav('hide');
+        sessionStorage.setItem('currentpage',data);
+        $('#filler').load(data+'.html');
+        $('footer').css({"bottom":"0"});
       }
 
+      //For notofications
+ if (!('Notification' in window)) {
+  console.log('This browser does not support notifications!');
+  return;
+}
+Notification.requestPermission(function(status) {
+  console.log('Notification permission status:', status);
+});     
+
+displayNotification = function(){
+
+if (Notification.permission == 'granted') {
+  navigator.serviceWorker.getRegistration().then(function(reg) {
+
+    // TODO 2.4 - Add 'options' object to configure the notification
+    var options = {
+  body: 'Notifications!!! Cool no??',
+  icon: 'images/logo.png',
+  vibrate: [100, 50, 100],
+  data: {
+    dateOfArrival: Date.now(),
+    primaryKey: 1
+  },
+
+  // TODO 2.5 - add actions to the notification
+
+  // TODO 5.1 - add a tag to the notification
+
+};
+
+
+    reg.showNotification('RNSIT',options);
+  });
+}
+};
+
+displayNotification();
 });
-
-
