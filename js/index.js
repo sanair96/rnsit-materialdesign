@@ -9,7 +9,7 @@ $(document).ready(function(){
 	  	$(".innerNav").slideUp("fast");
 	  	sessionStorage.setItem('slide',1);
 
-      Materialize.toast('I am a toast!', 4000)
+      Materialize.toast('Allow notifications and add to home screen for the best experience', 4000)
 	  	$('.dropdown-button').dropdown({
       inDuration: 300,
       outDuration: 225,
