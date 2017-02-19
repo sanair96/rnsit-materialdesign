@@ -5,12 +5,12 @@ $(document).ready(function(){
 	  	edge:'left',
 	  	closeOnClick:false,
 	  	draggable:true});
-
+      if(localStorage.getItem('visit')===null){
+        localStorage.setItem('visit',10);
+        Materialize.toast('Allow notifications and add to home screen for the best experience', 4000);
+      }
 	  	$(".innerNav").slideUp("fast");
 	  	sessionStorage.setItem('slide',1);
-
-
-      Materialize.toast('Allow notifications and add to home screen for the best experience', 4000)
 
      $(".innerNav1").slideUp("fast");
       sessionStorage.setItem('slide',1);
