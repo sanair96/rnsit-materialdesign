@@ -38,7 +38,7 @@
           transition: all 2s;
         }
         .noti{
-          position:fixed;
+          
           top: 250px;
           right:10px;
         }
@@ -46,6 +46,19 @@
           position: fixed;
           top:250px;
           left: 10px;
+        }
+        #but
+        {
+        	position: absolute;
+        	margin-top:5px;
+        	margin-left:10%;
+
+        }
+        #button
+        {
+        	position: absolute;
+        	margin-top:50px;
+        	margin-right:20%;
         }
       </style>
    </head>
@@ -146,8 +159,12 @@
   </div>  
 </div>
 </div>
-<b class="waves-effect waves-light btn noti nbtn">Notify Me!!</b>
-<b class="waves-effect waves-light btn push edbtn">Enable/Disable Push</b>
+<div>
+<ui>
+<li align="center"><b id="button" class="waves-effect waves-light btn noti nbtn">Notify Me!!</b></li>
+
+<li align="center"><b id="but" class="waves-effect waves-light btn push edbtn">Enable/Disable Push</b></li></ui>
+</div>
   <div id="filler">
   <h4>Work in progress. Check back later</h4>
   </div>
