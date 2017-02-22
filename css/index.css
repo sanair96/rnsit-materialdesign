@@ -23,7 +23,7 @@ body{
   margin-left: 20px;
 }
 .awes :hover{
-  background: white !important;
+  background: white !important; 
 }
 .nav-wrapper{
   background-color: #021B38;
@@ -98,7 +98,6 @@ body{
   footer{
     display: hidden;
 }
-
 .icon{
   width:50px;
 }
@@ -110,10 +109,4 @@ body{
 .heading {
   color: black;
   font-family: 'Bree Serif', serif;
-}
-
-@media only screen and (max-width: 992px){
-  .svg-logo{
-    float: right;
-  }
 }
