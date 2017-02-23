@@ -117,18 +117,9 @@ body{
 .heading {
   color: black;
   font-family: 'Bree Serif', serif;
-<<<<<<< HEAD
 }
 
 @media only screen and (max-width: 992px){
   .svg-logo{
     float: right;
   }
-||||||| merged common ancestors
-=======
-}
-
-.material-icons{
-  margin-left: -15vh;
->>>>>>> origin/master
-}
