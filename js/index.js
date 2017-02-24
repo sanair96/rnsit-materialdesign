@@ -99,6 +99,6 @@ if (Notification.permission == 'granted') {
   });
 }
 };
-
-displayNotification();
+//call this function when nitifications needed
+//displayNotification();
 });
