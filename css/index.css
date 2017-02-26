@@ -156,15 +156,22 @@ h1.heading{
 .brand-logo {
   color: white;
   padding-left: -10px;
-  margin-left: 20px;
+  margin-left: 21px;
 }
 .awes :hover{
-  background: white !important; 
+  background: white !important;
 }
 .nav-wrapper{
   background-color: #021B38;
 }
 
+.responsive-img {
+  height: 10vh;
+  width: 10vh;
+  margin-left: 7vh;
+  padding-left: 0px;
+  margin-top: -2.12vh;
+}
 
 
 .side-nav li{
@@ -234,6 +241,7 @@ h1.heading{
   footer{
     display: hidden;
 }
+
 .icon{
   width:50px;
 }
@@ -246,3 +254,8 @@ h1.heading{
   color: black;
   font-family: 'Bree Serif', serif;
 }
+
+@media only screen and (max-width: 992px){
+  .svg-logo{
+    float: right;
+  }
