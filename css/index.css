@@ -2,7 +2,143 @@ body{
   min-height: 100vh;
   font-family: 'open-sans', sans-serif;
 }
+.maincont{
+  text-align:   center;
+  padding-bottom:   20px;
+}
+.card-hover:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+   -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.important{
+  flex-wrap: wrap;
+}
+.wrapper {
+    height:400px;
+    width:100%;
+    position: relative;
+}
+.blur {
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-image:url('../images/blur.jpg');
+    background-size:cover;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px);
+}
+.maincont{
+  /*position: absolute;*/
+    /*background-color:red;*/
+}
 
+
+.maincont{
+  margin-top: 70px;
+}
+
+body,html{
+  height:   100%;
+}
+@media only screen and (max-width:768px){
+.logo {
+  margin-top: 10px;
+  width: 100px;
+}
+
+.header {
+  font-family: 'Bree Serif', serif;
+  color: #42A79E;
+  font-weight: 1.2em;
+}
+
+}
+h1.heading{
+  margin-top: -10px;
+}
+.chairman{
+  overflow: hidden;
+}
+
+
+.heading{
+  font-size: 6em;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.text-center {
+  font-family: 'Bree Serif', serif;
+  font-size: 4vh;
+  color: #0F6B63;
+}
+@media only screen and (max-width: 1000px){
+  .logo{
+    margin-top: 10px;
+  }
+}
+
+#about{
+  margin-top:   30px;
+  width:  90%;
+}
+
+#about p{
+  margin-top: 20px;
+  width:  100%;
+  /*color: #18906C;*/
+  font-size: 3vh;
+  font-family: 'Bree Serif', serif;
+}
+
+
+#about h3{
+  margin-top:   30px;
+  width:  100%;
+  font-family: 'Bree Serif', serif;
+}
+
+#about h6{
+  margin-top:   30px;
+  width:  100%;
+ font-family: 'Bree Serif', serif;
+ color: black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.card-content p{
+  color: black   !important;
+}
+
+.map-container {
+  width: 100%;
+  margin: 50px 0 10px;
+}
+.map-container iframe{
+  width: 100%;
+  display: block;
+  pointer-events: none;
+  position: relative; /* IE needs a position other than static */
+}
+.map-container iframe.clicked{
+  pointer-events: auto;
+}
+.images{
+  height: 200px;
+  width: calc(100%/4);
+  justify-content: space-around;
+}
 .logo {
     transition: all .4s;
 }
