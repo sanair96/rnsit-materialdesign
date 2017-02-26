@@ -10,7 +10,9 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
+.important{
+  flex-wrap: wrap;
+}
 .wrapper {
     height:400px;
     width:100%;
@@ -129,4 +131,8 @@ h1.heading{
 .map-container iframe.clicked{
   pointer-events: auto;
 }
-
+.images{
+  height: 200px;
+  width: calc(100%/4);
+  justify-content: space-around;
+}
