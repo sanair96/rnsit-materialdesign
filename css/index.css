@@ -6,6 +6,10 @@ body{
   text-align:   center;
   padding-bottom:   20px;
 }
+.nav-wrapper{
+  position: fixed;
+  top: 0px;
+}
 .card-hover:hover{
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -197,9 +201,6 @@ h1.heading{
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-}
-#filler{
-  margin-bottom: 260px;
 }
 #dropdown1{
   width:230px !important;
