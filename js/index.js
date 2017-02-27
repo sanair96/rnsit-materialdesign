@@ -89,6 +89,7 @@ $(window).resize(function(){
 }
       });
 
+
       navig = function(data){
         sessionStorage.setItem('currentpage',data);
         $('#filler').load(data+'.html');

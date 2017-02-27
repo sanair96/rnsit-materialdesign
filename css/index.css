@@ -2,13 +2,24 @@ body{
   min-height: 100vh;
   font-family: 'open-sans', sans-serif;
 }
+.navbar-fixed{
+  height: 0px;
+}
 .maincont{
+  /*padding-top: 60px;*/
   text-align:   center;
   padding-bottom:   20px;
 }
-.nav-wrapper{
-  position: fixed;
-  top: 0px;
+.nav{
+  background-color: rgba(0,0,0,0);
+  box-shadow: none;
+}
+.logo{ 
+  width: 300px;
+}
+nav{
+    transition: all .3s;
+  background-color: #021B38;
 }
 .card-hover:hover{
   -moz-transform: scale(1.1);
@@ -20,6 +31,25 @@ body{
 }
 .important{
   flex-wrap: wrap;
+}
+.maincont{
+  height: 100vh;
+  width: 100%;
+}
+.nightback{
+  background-image: url('../images/night.jpg');
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  z-index:-1;
+  filter: brightness(.7);
+}
+.heading, .tag{
+  color: white !important;
+}
+.logo, .heading,.tag{
+  z-index: 1;
 }
 .wrapper {
     height:400px;
@@ -37,15 +67,6 @@ body{
     -ms-filter: blur(4px);
     -o-filter: blur(4px);
     filter: blur(4px);
-}
-.maincont{
-  /*position: absolute;*/
-    /*background-color:red;*/
-}
-
-
-.maincont{
-  margin-top: 70px;
 }
 
 body,html{
@@ -165,10 +186,6 @@ h1.heading{
 .awes :hover{
   background: white !important;
 }
-.nav-wrapper{
-  background-color: #021B38;
-}
-
 .responsive-img {
   height: 10vh;
   width: 10vh;
@@ -255,7 +272,9 @@ h1.heading{
   color: black;
   font-family: 'Bree Serif', serif;
 }
-
+.svg-logo{
+  height: 65px; width: 65px;
+}
 @media only screen and (max-width: 992px){
   .svg-logo{
     float: right;
