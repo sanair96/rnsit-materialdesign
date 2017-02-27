@@ -1,13 +1,157 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>RNSIT Library</title>
+   <head>
+      <title>RNSIT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/logo.png" rel="icon" type="image/png" alt="logo">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#021B38">
+    <meta name="RNSIT" content="app-id=myAppStoreID, app-argument=myURL">
+    <link rel="apple-touch-icon" href="imgages/logo.png"/>
+
+    <meta name="mobile-web-app-capable" content="yes">
+<meta name="RNSIT" content="RNSIT">
+<link rel="icon" sizes="192x192" href="images/logo.png">
+ <!-- <splash src="images/prin.jpg"></splash> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sansita:400,700" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mada" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="images/logo.png" rel="icon" type="image/png">
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+           <link rel="stylesheet" type="text/css" href="css/ise.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+<style type="text/css">.card-hover:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+   -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}</style>
+      <style type="text/css">
+        .nava{
+          display: block;
+          padding-left: 30px;
+
+        }
+        .hidden{
+          height: 0;
+          overflow: hidden;
+          transition: all 2s;
+        }
+      </style>
+
 <link rel="stylesheet" type="text/css" href="css/library.css">
 </head>
+<body>
+ <div class="navbar-fixed">
+     <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <img class="svg-logo" src="images/RNSIT.svg" alt="rnsit logo" style="height: 65px; width: 65px;">
+      <a href="#" class="brand-logo" style="color: white; margin-left:0px; ">RNSIT</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a id="home" href="index.html">Home</a></li>
+        <li><a id="aboutus" href="aboutus.html">About US</a></li>
+        <li><a id="contact" onclick="navig('contact');" href="contact.html">Contact</a></li>
+
+        <!-- Dropdown Trigger -->
+  <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Departments<i class="material-icons right">arrow_drop_down</i></a></li>
+  <li><a class="dropdown-button" href="#!" data-activates="dropdown2">More<i class="material-icons right">arrow_drop_down</i></a></li>
+
+
+
+
+        <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a>BASIC SCIENCE DEPARTMENTS</a></li>
+    <li class="divider"></li>
+    <li><a id="physics" href="physics.html">Physics</a></li>
+    <li><a id="chemistry" href="chemistry.html">Chemistry</a></li>
+    <li><a id="mathematics" href="mathematics.html">Mathematics</a></li>
+    <li class="divider"></li>
+    <li><a id="engineeringdept">ENGINEERING DEPARTMENTS</a></li>
+    <li class="divider"></li>
+    <li><a id="cse" href="cse.html">CSE</a></li>
+    <li><a id="ece" href="ece.html">ECE</a></li>
+    <li><a id="eee" href="eee.html">EEE</a></li>
+    <li><a id="ise" href="ise.html">ISE</a></li>
+    <li><a id="eie" href="eie.html">EIE</a></li>
+    <li><a id="mech" href="mech.html">MECH</a></li>
+    <li><a id="civil" href="civil.html">CIVIL</a></li>
+    <li class="divider"></li>
+    <li><a id="pg">POST GRADUATION</a></li>
+    <li class="divider"></li>
+    <li><a id="mba" href="mba.html">MBA</a></li>
+    <li><a id="mca"  href="mca.html">MCA</a></li>
+    </ul>
+  </ul>
+
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a id="cse" href="alumni.html">ALUMNI</a></li>
+    <li><a id="ece" href="admissions.html">ADMISSIONS</a></li>
+    <li><a id="eee" href="placements.html">PLACEMENTS</a></li>
+    <li><a id="ise" href="library.html">LIBRARY</a></li>
+    <li><a id="eie" href="hostel.html">HOSTEL</a></li>
+    <li><a id="mech" href="transport.html">TRANSPORT</a></li>
+    <li><a id="mba" href="sportsculture.html">SPORTS & CULTURE</a></li>
+    <li><a id="mca" href="facilities.html">FACILITIES</a></li>
+  </ul>
+
+     <!--mobile!-->
+      <ul class="side-nav" id="mobile-demo">
+        <li><a id="home" href="index.html">Home</a></li>
+        <li><a id="aboutus" href="aboutus.html">About US</a></li>
+        <li><a id="contact" href="contact.html">Contact</a></li>
+        <li><a class="dropNav">Departments<i class="material-icons right">arrow_drop_down</i></a></li>
+         <li class="innerli">      <div class="innerNav">
+        <a class="nava">BASIC SCIENCE DEPARTMENTS</a>
+        <ul><li class=" nava divider"></li></ul>
+        <a id="physics" class="nava awes" href="physics.html">Physics</a>
+        <a id="chemistry" class="nava awes" href="chemistry.html">Chemistry</a>
+        <a id="mathematics" class="nava awes" href="mathematics.html">Mathematics</a>
+        <a id="engineeringdept" class="nava ">ENGINEERING DEPARTMENTS</a>
+        <ul><li class=" nava divider"></li></ul>
+
+        <a id="cse" class="nava" href="cse.html">CSE</a>
+        <a id="ece" class="nava" href="ece.html">ECE</a>
+        <a id="eee" class="nava"  href="eee.html">EEE</a>
+        <a id="ise" class="nava" href="ise.html">ISE</a>
+        <a id="eie" class="nava" href="eie.html">EIE</a>
+        <a id="mech" class="nava" href="mech.html">MECH</a>
+        <a id="civil" class="nava" href="civil.html">CIVIL</a>
+        <a id="pg" class="nava">POST GRADUATION</a>
+        <ul><li  id=""class=" nava divider"></li></ul>
+        <a id="mba" class="nava awes" href="mba.html">MBA</a>
+        <a id="mca" class="nava awes" href="mca.html">MCA</a>
+
+      </div></li>
+      <li><a class="dropNav1">Others<i class="material-icons right">arrow_drop_down</i></a></li>
+         <li class="innerli">      <div class="innerNav1">
+          <a id="cse" class="nava" href="alumni.html">Alumini</a>
+          <a id="cse" class="nava" href="admissions.html">Admissions</a>
+          <a id="cse" class="nava" href="placements.hrml">Placement</a>
+          <a id="cse" class="nava" href="library.html">Library</a>
+          <a id="cse" class="nava" href="hostel.html">Hostel</a>
+          <a id="cse" class="nava" href="transport.html">Transport</a>
+          <a id="cse" class="nava"  href="sportsculture.html">Sports & Culture</a>
+          <a id="cse" class="nava" href="facilities.html">Facilities</a>
+          </div>
+          </li>
+
+    </ul>
+    </div>
+  </nav>
+  </div>
 <h1 align="center">LIBRARY</h1>
 <div class="container">
  <div class="row">
@@ -20,7 +164,7 @@
         </div>
 <p>
 RNSIT Library was established during the year 2001 with a collection of 2000 volumes of books. Within a span of 10 years it has grown with a collection of over 26,341 volumes, 80 Journals, 18 Magazines and 11 News papers.. RNSIT Library is an automated Library. Books are Bar Coded and students are issued an identity card to transact with the library facilities. Each student will be issued 3 books during regular time and 4 Books are issued during their exams. Journals and Magazines are available to support and enhance their specialization. Both Indian and foreign journals are being subscribed. Our library has been subscribed to the IEEE – IEL Online through INDEST – AICTE consortium by paying Rs. 4 lakhs to support library users project works, technical reports, and R & D works.<p>
-<p><b>Also we are having the Long term plan of connecting the Library to 
+<p><b>Also we are having the Long term plan of connecting the Library to
 - other renowned libraries like CPRI, ISRO, NAL and IISc.</b></p>
 
  	</div>
@@ -33,8 +177,8 @@ RNSIT Library was established during the year 2001 with a collection of 2000 vol
           </div>
         </div>
 <p>
-Separate CD Library is maintained with 4 computers and with a collection of 2200 CD's. Students can use this facility during their leisure time. 
-Separate Browsing center is also maintained with the support of Incable's Internet facilities and 17 separate systems for this purpose. Students can surf the net and avail the internet facility till midnight. 
+Separate CD Library is maintained with 4 computers and with a collection of 2200 CD's. Students can use this facility during their leisure time.
+Separate Browsing center is also maintained with the support of Incable's Internet facilities and 17 separate systems for this purpose. Students can surf the net and avail the internet facility till midnight.
 We have organized Book Exhibition 4 times in order to enrich our collection. Reputed book publishers and sellers like Book paradise, Generation Books, Sri Sai Books, Sri Laxmi Book Distributors, Ell Enn Books have participated in this. Faculty and students were given preference to select and suggest the books. <p>
 
  	</div>
@@ -105,7 +249,7 @@ The following VTU e-resources can be accessed by the following website,<p>
           </tr>
         </tbody>
       </table>
-            
+
 </div>
 
  	</div>
@@ -175,3 +319,41 @@ The following VTU e-resources can be accessed by the following website,<p>
 </div>
 </div>
  </div>
+
+  <div id="fot">
+        <footer id="footer" class="page-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col l4 m4 s12">
+            <h5 class="orange-text">RNSIT</h5>
+            <p class="white-text text-lighten-4">R.N. Shetty Institute of Technology (RNSIT) established in the year 2001, is the brain-child of the Group Chairman, Dr. R.N. Shetty.The Murudeshwar Group of Companies headed by Sri. R. N. Shetty is a leading player in many industries viz construction, manufacturing, hotel, automobile, power & IT services and education. The group has contributed significantly to the field of education.</p>
+<button name="action" class="btn waves-effect waves-light black lighten-3" type="submit" alt="PayPal - The safer, easier way to pay online!">COMPLIMENT</button>
+
+          </div>
+          <div class="col l4 m4 s12 push-m1 push-l1">
+            <h5 class="orange-text">HELP</h5>
+            <p class="grey-text text-lighten-4"></p>
+            <ul>
+                  <li><a class="white-text text-lighten-3" href="#!">HOME</a></li>
+                  <li><a class="white-text text-lighten-3" href="#!">ABOUT</a></li>
+                  <li><a class="white-text text-lighten-3" href="#!">DEPT</a></li>
+                  <li><a class="white-text text-lighten-3" href="#!">COURSE</a></li>
+            </ul>
+            <a class="btn waves-effect waves-light black lighten-3" href="#!">Email</a>
+          </div>
+          <div class="col l4 m4 s12" style="overflow: hidden;">
+            <h5 class="orange-text">Connect</h5>
+            <a href="https://www.facebook.com/pages/RNS-Institute-of-Technology/143512852331957"><image class="icon" src="images/facebook.svg" alt="fb"></image></a>
+            <a href="instagram/rnsit"><image class="icon" src="images/instagram.svg" alt="insta"></image></a>
+            <a href="twitter/rnsit"><image class="icon" src="images/twitter.svg" alt="twitter"></image></a>
+            <a href="mailto:principal@rnsit.ac.in"><image class="icon" src="images/gmail.svg" alt="gmail"></image></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p style="text-align:center"><b>Handcrafted by Dept of CSE</b></p>
+        </div>
+      </div>
+    </footer>
+    </div>
