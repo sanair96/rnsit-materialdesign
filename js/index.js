@@ -1,5 +1,9 @@
 $(document).ready(function(){
-
+$( ".logo" ).fadeIn( 600, function() {
+      $( ".heading" ).fadeIn( 600, function() {
+      $( ".tag" ).fadeIn( 600, function() {});
+  });
+  });
 
 
           // $('.carousel').carousel();
