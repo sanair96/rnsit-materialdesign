@@ -22,6 +22,21 @@ i
 {
 	font-size: 3vh;
 }
+.icon{
+	width: 50px;
+}
+#footer
+{
+	width:100%;
+	bottom:0;
+  z-index: 2000;
+  height:20%;
+  background-color:#021B38;
+
+}
+.division second{
+	height: 900px !important;
+}
 @media screen and (max-width: 768px){
   h1{
    margin-top:75px;
