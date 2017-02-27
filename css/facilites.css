@@ -16,7 +16,7 @@ h1
 }
 @media screen and (max-width: 768px){
   h1{
-   margin-top:75px;
+   margin-top:275px;
   }
   footer{
     display: hidden;
