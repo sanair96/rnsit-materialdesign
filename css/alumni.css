@@ -25,12 +25,16 @@ i
 .icon{
 	width: 50px;
 }
+#also
+{
+	background-color:#021B38;	
+}
 #footer
 {
 	width:100%;
 	bottom:0;
   z-index: 2000;
-  height:20%;
+  height:30%;
   background-color:#021B38;
 
 }
