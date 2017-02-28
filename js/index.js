@@ -66,12 +66,12 @@ $(window).resize(function(){
       stopPropagation: false // Stops event propagation
     }
   );
-            if(sessionStorage.getItem('currentpage') === null ){
-                  sessionStorage.setItem('currentpage','home')
-            }
-            firstthing = sessionStorage.getItem('currentpage');
-            console.log(firstthing);
-            $('#filler').load(firstthing+'.html');
+            // if(sessionStorage.getItem('currentpage') === null ){
+            //       sessionStorage.setItem('currentpage','home')
+            // }
+            // firstthing = sessionStorage.getItem('currentpage');
+            // console.log(firstthing);
+            // $('#filler').load(firstthing+'.html');
 
       $(".dropNav").click(function(){
       		// alert('hi');
@@ -98,11 +98,11 @@ $(window).resize(function(){
       });
 
 
-      navig = function(data){
-        sessionStorage.setItem('currentpage',data);
-        $('#filler').load(data+'.html');
-        $('footer').css({"bottom":"0"});
-      }
+      // navig = function(data){
+      //   sessionStorage.setItem('currentpage',data);
+      //   $('#filler').load(data+'.html');
+      //   $('footer').css({"bottom":"0"});
+      // }
 
       //For notofications
  if (!('Notification' in window)) {
