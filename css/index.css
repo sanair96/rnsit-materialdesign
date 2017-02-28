@@ -19,7 +19,7 @@ body{
 }
 nav{
     transition: all .3s;
-  background-color: #021B38 !important;
+  background-color: #021B38;
 }
 .card-hover:hover{
   -moz-transform: scale(1.1);
@@ -49,7 +49,7 @@ nav{
   color: white !important;
 }
 .logo, .heading,.tag{
-  z-index: 1;
+  z-index: 20;
 }
 .wrapper {
     height:400px;
