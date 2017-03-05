@@ -4,8 +4,6 @@ var CACHE_VERSION = 1;
 // Shorthand identifier mapped to specific versioned cache.
 var CURRENT_CACHE = "rnsitcache" + CACHE_VERSION;
 var initial_cache =['.','index.html','css/index.css','js/index.js'];
-var CURRENT_CACHE = 'rnsitcache' + CACHE_VERSION;
-var initial_cache =['index.html','css/index.css','js/index.js'];
 	self.addEventListener('install',event=>{
 		console.log('Installing service worker');
 		skipWaiting();

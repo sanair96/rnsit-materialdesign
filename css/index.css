@@ -267,6 +267,13 @@ h1.heading{
   color: white;
   padding-left: 0px;
 }
+.nightback{
+  height:40%;
+  }
+
+.maincont{
+  height:100%;
+  }
 }
 .heading {
   color: black;
