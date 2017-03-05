@@ -1,12 +1,13 @@
 $(document).ready(function(){
-$( ".logo" ).fadeIn( 600, function() {
-  $(".logo").css("display":"inline");
+$( ".logo" ).fadeIn( 600, function(){
+  $(".logo").css("display","inline");
       $( ".heading" ).fadeIn( 600, function() {
-        $(".heading").css("display":"inline");
+        $(".heading").css("display","inline");
       $( ".tag" ).fadeIn( 600, function() {
-        $(".tag").css("display":"inline");
+        $(".tag").css("display","inline");
       });
   });
+
   });
 
 
@@ -21,8 +22,7 @@ $( ".logo" ).fadeIn( 600, function() {
       belowOrigin: true, // Displays dropdown below the button
       alignment: 'left', // Displays dropdown with edge aligned to the left of button
       stopPropagation: false // Stops event propagation
-    }
-  );
+    });
 $('.map-container').click(function(){
       $(this).find('iframe').addClass('clicked')})
   .mouseleave(function(){
@@ -30,13 +30,8 @@ $('.map-container').click(function(){
 
 
 $(window).resize(function(){
-  $('.chairman').height($('.director').height()); 
+  $('.chairman').height($('.director').height());
 });
-
-
-
-
-
 
 	  $(".button-collapse").sideNav({
 	  	menuWidth:300,
@@ -54,7 +49,7 @@ $(window).resize(function(){
       sessionStorage.setItem('slide',1);
 
 
-     
+
 	  	$('.dropdown-button').dropdown({
       inDuration: 300,
       outDuration: 225,
@@ -77,7 +72,7 @@ $(window).resize(function(){
       		// alert('hi');
       				if(sessionStorage.getItem('slide') == 0){
       					$(".innerNav").slideUp(300);
-      					sessionStorage.setItem('slide',1);				
+      					sessionStorage.setItem('slide',1);
       				}
       				else{
       				sessionStorage.setItem('slide',0);
@@ -88,7 +83,7 @@ $(window).resize(function(){
           // alert('hi');
               if(sessionStorage.getItem('slide1') == 0){
                 $(".innerNav1").slideUp(300);
-                sessionStorage.setItem('slide1',1);        
+                sessionStorage.setItem('slide1',1);
               }
               else{
               sessionStorage.setItem('slide1',0);
@@ -111,7 +106,7 @@ $(window).resize(function(){
 }
 Notification.requestPermission(function(status) {
   console.log('Notification permission status:', status);
-});     
+});
 
 displayNotification = function(){
 
