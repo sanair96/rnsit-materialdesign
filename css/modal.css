@@ -1,0 +1,50 @@
+
+.listul{
+  width:50%; 
+  transition: all .3s;
+}
+li{
+  display: inline-block;
+  text-align: center;
+  transition: all .3s;
+}
+li img{
+  width: 100%;
+}
+.listul li{
+ box-shadow: 0 0 10px 5px rgba(0,0,0,.2);
+}
+.listul li:hover{
+   box-shadow: 0 0 30px 5px rgba(0,0,0,.2);
+}
+.modal-img{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: -75px;
+	border-radius: 30%;
+}
+.modal-back{
+	height: 30vh;
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+.modal-content{
+	text-align: center;
+	height: 80vh !important;
+}
+@media only screen and (min-width: 480px){
+	.modal-img{
+		width: 40%;
+			margin-left: auto;
+	margin-right: auto;
+	}
+
+}
+
+@media only screen and (min-width: 768px){
+	.listul{
+		width: 30%;
+	}
+		}
+		
