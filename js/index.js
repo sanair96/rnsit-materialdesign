@@ -9,6 +9,7 @@ $( ".logo" ).fadeIn( 600, function(){
   });
 
   });
+  
 
 
           // $('.carousel').carousel();
