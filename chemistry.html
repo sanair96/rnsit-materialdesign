@@ -1,11 +1,149 @@
 <!DOCTYPE html>
-<head>
-  <link rel="stylesheet" type="text/css" href="css/chemistry.css">
-</head>
+    <head>
+        <title>RNSIT</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="images/logo.png" rel="icon" type="image/png" alt="logo">
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#021B38">
+        <meta name="RNSIT" content="app-id=myAppStoreID, app-argument=myURL">
+        <link rel="apple-touch-icon" href="imgages/logo.png" />
 
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="RNSIT" content="RNSIT">
+        <link rel="icon" sizes="192x192" href="images/logo.png">
+        <!-- <splash src="images/prin.jpg"></splash> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sansita:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mada" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/chemistry.css">
+        <link href="images/logo.png" rel="icon" type="image/png">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+        <style type="text/css">
+            .nava {
+                display: block;
+                padding-left: 30px;
+            }
+            .hidden {
+                height: 0;
+                overflow: hidden;
+                transition: all 2s;
+            }
+        </style>
+    </head>
+
+    <body>
+       <!--<div class="container">-->
+         <nav class="nav-extended">
+          <div class="nav-wrapper">
+            <img class="svg-logo" src="images/RNSIT.svg" alt="rnsit logo" style="height: 65px; width: 65px;">
+              <a href="#" class="brand-logo" style="color: white; margin-left:0px; ">RNSIT</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a id="aboutus" href="aboutus.html">About US</a></li>
+                <li><a id="contact" onclick="navig('contact');" href="contact.html">Contact</a></li>
+
+                <!-- Dropdown Trigger -->
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Departments<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown2">More<i class="material-icons right">arrow_drop_down</i></a></li>
+
+
+
+
+                <!-- Dropdown Structure -->
+          <ul id="dropdown1" class="dropdown-content">
+            <li><a>BASIC SCIENCE DEPARTMENTS</a></li>
+            <li class="divider"></li>
+            <li><a id="physics" href="physics.html">Physics</a></li>
+            <li><a id="chemistry" href="chemistry.html">Chemistry</a></li>
+            <li><a id="mathematics" href="mathematics.html">Mathematics</a></li>
+            <li class="divider"></li>
+            <li><a id="engineeringdept">ENGINEERING DEPARTMENTS</a></li>
+            <li class="divider"></li>
+            <li><a id="cse" href="cse.html">CSE</a></li>
+            <li><a id="ece" href="ece.html">ECE</a></li>
+            <li><a id="eee" href="eee.html">EEE</a></li>
+            <li><a id="ise" href="ise.html">ISE</a></li>
+            <li><a id="eie" href="eie.html">EIE</a></li>
+            <li><a id="mech" href="mech.html">MECH</a></li>
+            <li><a id="civil" href="civil.html">CIVIL</a></li>
+            <li class="divider"></li>
+            <li><a id="pg">POST GRADUATION</a></li>
+            <li class="divider"></li>
+            <li><a id="mba" href="mba.html">MBA</a></li>
+            <li><a id="mca"  href="mca.html">MCA</a></li>
+            </ul>
+          </ul>
+
+          <ul id="dropdown2" class="dropdown-content">
+            <li><a id="cse" href="alumni.html">ALUMNI</a></li>
+            <li><a id="ece" href="admissions.html">ADMISSIONS</a></li>
+            <li><a id="eee" href="placements.html">PLACEMENTS</a></li>
+            <li><a id="ise" href="library.html">LIBRARY</a></li>
+            <li><a id="eie" href="hostel.html">HOSTEL</a></li>
+            <li><a id="mech" href="transport.html">TRANSPORT</a></li>
+            <li><a id="mba" href="sportsculture.html">SPORTS & CULTURE</a></li>
+            <li><a id="mca" href="facilities.html">FACILITIES</a></li>
+          </ul>
+
+             <!--mobile!-->
+              <ul class="side-nav" id="mobile-demo">
+                <li><a id="home" href="home.html">Home</a></li>
+                <li><a id="aboutus" href="aboutus.html">About US</a></li>
+                <li><a id="contact" href="contact.html">Contact</a></li>
+                <li><a class="dropNav">Departments<i class="material-icons right">arrow_drop_down</i></a></li>
+                 <li class="innerli">      <div class="innerNav">
+                <a class="nava">BASIC SCIENCE DEPARTMENTS</a>
+                <ul><li class=" nava divider"></li></ul>
+                <a id="physics" class="nava awes" href="physics.html">Physics</a>
+                <a id="chemistry" class="nava awes" href="chemistry.html">Chemistry</a>
+                <a id="mathematics" class="nava awes" href="mathematics.html">Mathematics</a>
+                <a id="engineeringdept" class="nava ">ENGINEERING DEPARTMENTS</a>
+                <ul><li class=" nava divider"></li></ul>
+
+                <a id="cse" class="nava" href="cse.html">CSE</a>
+                <a id="ece" class="nava" href="ece.html">ECE</a>
+                <a id="eee" class="nava"  href="eee.html">EEE</a>
+                <a id="ise" class="nava" href="ise.html">ISE</a>
+                <a id="eie" class="nava" href="eie.html">EIE</a>
+                <a id="mech" class="nava" href="mech.html">MECH</a>
+                <a id="civil" class="nava" href="civil.html">CIVIL</a>
+                <a id="pg" class="nava">POST GRADUATION</a>
+                <ul><li  id=""class=" nava divider"></li></ul>
+                <a id="mba" class="nava awes" href="mba.html">MBA</a>
+                <a id="mca" class="nava awes" href="mca.html">MCA</a>
+
+              </div></li>
+              <li><a class="dropNav1">Others<i class="material-icons right">arrow_drop_down</i></a></li>
+                 <li class="innerli">      <div class="innerNav1">
+                  <a id="cse" class="nava" href="alumni.html">Alumini</a>
+                  <a id="cse" class="nava" href="admissions.html">Admissions</a>
+                  <a id="cse" class="nava" href="placements.hrml">Placement</a>
+                  <a id="cse" class="nava" href="library.html">Library</a>
+                  <a id="cse" class="nava" href="hostel.html">Hostel</a>
+                  <a id="cse" class="nava" href="transport.html">Transport</a>
+                  <a id="cse" class="nava"  href="sportsculture.html">Sports & Culture</a>
+                  <a id="cse" class="nava" href="facilities.html">Facilities</a>
+                  </div>
+                  </li>
+
+                </ul>
+            </div>
+        </nav>
         <div class="container">
-           <h3 align="center">CHEMISTRY DEPARTMENT</h3>
+
+            <h3 align="center">CHEMISTRY DEPARTMENT</h3>
             <div class="row">
+
                 <div class="col s12 m3">
                     <div class="card">
                         <div class="card-image">
@@ -17,401 +155,480 @@
                         </div>
                     </div>
                 </div>
-                        <p id="para">The Department of Chemistry at RNSIT was established in the year 2001 during the inception of the Institution. The Vision of the Department is to meet the core requirement of Chemistry in the field of Applied Science and Technology.</p>
+                <p id="para">The Department of Chemistry at RNSIT was established in the year 2001 during the inception of the Institution. The Vision of the Department is to meet the core requirement of Chemistry in the field of Applied Science and Technology.</p>
 
-                        <p id="para">The Department is headed by Dr. T. Jeevananda, who has 16 years of Teaching and Research experience of which 3 years as Post Doctoral Scientist in South Korea. The other Faculty members of the department are highly qualified, experienced and dedicated teaching faculty members of which three are Doctorates and one is pursuing his Ph.D. degree. The Department is well equipped with lab facilities to meet the curriculum of Engineering Chemistry.</p>
+                <p id="para">The Department is headed by Dr. T. Jeevananda, who has 16 years of Teaching and Research experience of which 3 years as Post Doctoral Scientist in South Korea. The other Faculty members of the department are highly qualified, experienced and dedicated teaching faculty members of which three are Doctorates and one is pursuing his Ph.D. degree. The Department is well equipped with lab facilities to meet the curriculum of Engineering Chemistry.</p>
 
-                        <p id="para">In the year 2008, the department got approved by VTU as R & D Centre for carrying out research work and to pursue PhD degree. The Department has a strong record of achievements both in teaching and research activities. The Department, R & D Centre has published more than 20 research articles in reputed National and International Journals in the previous years. The Department provide graduate students with the foundation needed for a meaningful professional career and a lifetime of independent learning. The department also organizes lectures to encourage students to upgrade their knowledge.</p>
+                <p id="para">In the year 2008, the department got approved by VTU as R & D Centre for carrying out research work and to pursue PhD degree. The Department has a strong record of achievements both in teaching and research activities. The Department, R & D Centre has published more than 20 research articles in reputed National and International Journals in the previous years. The Department provide graduate students with the foundation needed for a meaningful professional career and a lifetime of independent learning. The department also organizes lectures to encourage students to upgrade their knowledge.</p>
 
-                        <p id="para">The Department of Chemistry has organized a National Conference on “Recent Trends in Materials Chemistry and Engineering (RTMCE-2011)” during September 29-30, 2011.
-
-                        Some of the Research Activities at the Department are,
-                        <ul>
-                            <li><b>Conducting Polymer Composites/Nano-Composites,</b></li>
-                            <li><b>Material Science,</b></li>
-                            <li><b>Electrochemistry,</b></li>
-                            <li><b>Solid State Reactions etc.,</b></li>
-                        </ul>
-                        </p>
-                </div>
+                <p id="para">The Department of Chemistry has organized a National Conference on “Recent Trends in Materials Chemistry and Engineering (RTMCE-2011)” during September 29-30, 2011. Some of the Research Activities at the Department are,
+                    <ul>
+                        <li><b>Conducting Polymer Composites/Nano-Composites,</b>
+                        </li>
+                        <li><b>Material Science,</b>
+                        </li>
+                        <li><b>Electrochemistry,</b>
+                        </li>
+                        <li><b>Solid State Reactions etc.,</b>
+                        </li>
+                    </ul>
+                </p>
+            </div>
 
 
             <div class="row">
-                    <h5><p id="sub"><b>Details of Individual Faculty Members</b></p></h5>
-                </div>
+                <h5><p id="sub"><b>Details of Individual Faculty Members</b></p></h5>
+            </div>
             <div class="row">
                 <div class="col s4 m4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/cardpics/card2.jpeg" alt="Dr. T. Jeevananda">
+                            <img class="activator" src="images/cardpics/card2.jpeg" alt="Dr. T. Jeevananda">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Dr. T. Jeevananda<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">Dr. T. Jeevananda<i class="material-icons right">close</i>
-                          </span>
-                          <table class="bordered responsive-table">
-                            <tbody id="para">
-                              <tr>
-                                <td><b>Designation</b></td>
-                                <td>Asst. Professor and Head</td>
-                              </tr>
-                              <tr>
-                                <td><b>Qualifications</b></td>
-                                <td>M.Sc, Ph. D, PGDCA</td>
-                              </tr>
-                              <tr>
-                                <td><b>Contact No. / E-Mail</b></td>
-                                <td>9972542987 / jeevananda@gmail.com</td>
-                              </tr>
-                              <tr>
-                                <td><b>Professional Experience</b></td>
-                                <td>3 Years of Post Doctoral Research in South Korea</td>
-                              </tr>
-                              <tr>
-                                <td><b>Research Interest</b></td>
-                                <td>Materials Science, Conducting Polymer Nano composites, Electrochemistry</td>
-                              </tr>
-                              <tr>
-                                <td><b>Total Experience</b></td>
-                                <td>Teaching : 16 Years  Research : 18 Years</td>
-                              </tr>
-                              <tr>
-                                <td><b>Papers Presented in Conferences</b></td>
-                                <td>International/National : 22</td>
-                              </tr>
-                              <tr>
-                                <td><b>Number of Papers published / Presented /Books published</b></td>
-                                <td>International  journal : 25   National journal : 04    Books : 02</td>
-                              </tr>
-                              <tr>
-                                <td><b>PhD Guide / field & University</b></td>
-                                <td>03 under VTU Conducting Composite/nano-Composite, Electrochemistry</td>
-                              </tr>
-                              <tr>
-                                <td><b>Professional Memberships</b></td>
-                                <td>MISTE, IRI</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                            <span class="card-title grey-text text-darken-4">Dr. T. Jeevananda<i class="material-icons right">close</i></span>
+                            <table class="bordered responsive-table">
+                                <tbody id="para">
+                                    <tr>
+                                        <td><b>Designation</b>
+                                        </td>
+                                        <td>Asst. Professor and Head</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Qualifications</b>
+                                        </td>
+                                        <td>M.Sc, Ph. D, PGDCA</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Contact No. / E-Mail</b>
+                                        </td>
+                                        <td>9972542987 / jeevananda@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Professional Experience</b>
+                                        </td>
+                                        <td>3 Years of Post Doctoral Research in South Korea</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Research Interest</b>
+                                        </td>
+                                        <td>Materials Science, Conducting Polymer Nano composites, Electrochemistry</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Total Experience</b>
+                                        </td>
+                                        <td>Teaching : 16 Years Research : 18 Years</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Papers Presented in Conferences</b>
+                                        </td>
+                                        <td>International/National : 22</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Number of Papers published / Presented /Books published</b>
+                                        </td>
+                                        <td>International journal : 25 National journal : 04 Books : 02</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>PhD Guide / field & University</b>
+                                        </td>
+                                        <td>03 under VTU Conducting Composite/nano-Composite, Electrochemistry</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Professional Memberships</b>
+                                        </td>
+                                        <td>MISTE, IRI</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                      </div>
                     </div>
-<!--next card!-->
+                </div>
+                <!--next card!-->
                 <div class="col s4 m4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/cardpics/card3.jpeg" alt="Dr. V Bheemaraju">
+                            <img class="activator" src="images/cardpics/card3.jpeg" alt="Dr. V Bheemaraju">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Dr. V Bheemaraju<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">Dr. V Bheemaraju<i class="material-icons right">close</i>
-                          </span>
-                          <table class="bordered responsive-table">
-                            <tbody id="para">
-                              <tr>
-                                <td><b>Designation</b></td>
-                                <td>Assistant Professor</td>
-                              </tr>
-                              <tr>
-                                <td><b>Qualifications</b></td>
-                                <td>B.Sc, M.Sc, MBA, Ph.D</td>
-                              </tr>
-                              <tr>
-                                <td><b>Total Experience</b></td>
-                                <td>Teaching : 32 Years</td>
-                              </tr>
-                              <tr>
-                                <td><b>Research Interest</b></td>
-                                <td>Solid State, Electrochemistry, Catalysis & Environmental Science</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                      </div>
+                            <span class="card-title grey-text text-darken-4">Dr. V Bheemaraju<i class="material-icons right">close</i>
+                            </span>
+                            <table class="bordered responsive-table">
+                                <tbody id="para">
+                                    <tr>
+                                        <td><b>Designation</b>
+                                        </td>
+                                        <td>Assistant Professor</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Qualifications</b>
+                                        </td>
+                                        <td>B.Sc, M.Sc, MBA, Ph.D</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Total Experience</b>
+                                        </td>
+                                        <td>Teaching : 32 Years</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Research Interest</b>
+                                        </td>
+                                        <td>Solid State, Electrochemistry, Catalysis & Environmental Science</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                  </div>
-<!--next card!-->
+                </div>
+                <!--next card!-->
                 <div class="col s4 m4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/cardpics/card4.jpeg" alt="Mr. Ramanath Prabhu">
+                            <img class="activator" src="images/cardpics/card4.jpeg" alt="Mr. Ramanath Prabhu">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Mr. Ramanath Prabhu<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">Mr. Ramanath Prabhu<i class="material-icons right">close</i>
-                          </span>
-                          <table class="bordered responsive-table">
-                            <tbody id="para">
-                              <tr>
-                                <td><b>Designation</b></td>
-                                <td>Assistant Professor</td>
-                              </tr>
-                              <tr>
-                                <td><b>Qualifications</b></td>
-                                <td>M.Sc, (Ph.D)</td>
-                              </tr>
-                              <tr>
-                                <td><b>Total Experience</b></td>
-                                <td>Teaching : 3 years  Research : 1.5 years</td>
-                              </tr>
-                              <tr>
-                                <td><b>Number of papers published/ Presented/National/International</b></td>
-                                <td>Presented : 04   Published : 05</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                      </div>
-                  </div>
+                            <span class="card-title grey-text text-darken-4">Mr. Ramanath Prabhu<i class="material-icons right">close</i>
+                              </span>
+                            <table class="bordered responsive-table">
+                                <tbody id="para">
+                                    <tr>
+                                        <td><b>Designation</b>
+                                        </td>
+                                        <td>Assistant Professor</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Qualifications</b>
+                                        </td>
+                                        <td>M.Sc, (Ph.D)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Total Experience</b>
+                                        </td>
+                                        <td>Teaching : 3 years Research : 1.5 years</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Number of papers published/ Presented/National/International</b>
+                                        </td>
+                                        <td>Presented : 04 Published : 05</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-<!--next card!-->
+                <!--next card!-->
                 <div class="col s4 m4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/cardpics/card5.jpeg" alt="Dr. B Vinay Kumar">
+                            <img class="activator" src="images/cardpics/card5.jpeg" alt="Dr. B Vinay Kumar">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4"> Dr. B Vinay Kumar<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4"> Dr. B Vinay Kumar<i class="material-icons right">close</i>
-                          </span>
-                          <table class="bordered responsive-table">
-                            <tbody id="para">
-                              <tr>
-                                <td><b>Designation</b></td>
-                                <td>Assistant Professor</td>
-                              </tr>
-                              <tr>
-                                <td><b>Qualifications</b></td>
-                                <td>M.Sc, Ph.D</td>
-                              </tr>
-                              <tr>
-                                <td><b>Contact No. / E-Mail</b></td>
-                                <td>8105764862 ; vinaybcta@gmail.com ; vinaysco@gmail.com</td>
-                              <tr>
-                                <td><b>Total Experience</b></td>
-                                <td>Teaching : 2 years/td>
-                              </tr>
-                              <tr>
-                                <td><b>Research Interest</b></td>
-                                <td><ol>
-                                      <li>Synthesis of bioactive heterocyclic compounds</li>
-                                      <li>Synthesis of fused heterocyclic ligands and its metal complexes.</li>
-                                      <li>Organic transformations using nanoparticles.</li>
-                                      <li>DNA binding and cleavage studies</li>
-                                </ol></td></tr>
-                              <tr>
-                                <td><b>Number of papers published/ Presented/National/International</b></td>
-                                <td>Published : 12</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                            <span class="card-title grey-text text-darken-4"> Dr. B Vinay Kumar<i class="material-icons right">close</i>
+                              </span>
+                            <table class="bordered responsive-table">
+                                <tbody id="para">
+                                    <tr>
+                                        <td><b>Designation</b>
+                                        </td>
+                                        <td>Assistant Professor</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Qualifications</b>
+                                        </td>
+                                        <td>M.Sc, Ph.D</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Contact No. / E-Mail</b>
+                                        </td>
+                                        <td>8105764862 ; vinaybcta@gmail.com ; vinaysco@gmail.com</td>
+                                    </tr>
+                                        <tr>
+                                            <td><b>Total Experience</b>
+                                            </td>
+                                            <td>Teaching : 2 years</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Research Interest</b>
+                                            </td>
+                                            <td>
+                                                <ol>
+                                                    <li>Synthesis of bioactive heterocyclic compounds</li>
+                                                    <li>Synthesis of fused heterocyclic ligands and its metal complexes.</li>
+                                                    <li>Organic transformations using nanoparticles.</li>
+                                                    <li>DNA binding and cleavage studies</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Number of papers published/ Presented/National/International</b>
+                                            </td>
+                                            <td>Published : 12</td>
+                                        </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-<!--next card!-->
+                <!--next card!-->
                 <div class="col s4 m4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/cardpics/card5.jpeg" alt="Ms. Karthika Shetty">
+                            <img class="activator" src="images/cardpics/card5.jpeg" alt="Ms. Karthika Shetty">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Ms. Karthika Shetty<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">Ms. Karthika Shetty<i class="material-icons right">close</i>
-                          </span>
-                          <table class="bordered responsive-table">
-                            <tbody id="para">
-                              <tr>
-                                <td><b>Designation</b></td>
-                                <td>Assistant Professor</td>
-                              </tr>
-                              <tr>
-                                <td><b>Qualifications</b></td>
-                                <td>M.Sc</td>
-                              </tr>
-                              <tr>
-                                <td><b>Total Experience</b></td>
-                                <td>Teaching : 2 years  Industry : 1 year</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                      </div>
-                  </div>
+                            <span class="card-title grey-text text-darken-4">Ms. Karthika Shetty<i class="material-icons right">close</i>
+                              </span>
+                            <table class="bordered responsive-table">
+                                <tbody id="para">
+                                    <tr>
+                                        <td><b>Designation</b>
+                                        </td>
+                                        <td>Assistant Professor</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Qualifications</b>
+                                        </td>
+                                        <td>M.Sc</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Total Experience</b>
+                                        </td>
+                                        <td>Teaching : 2 years Industry : 1 year</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-<!--next card!-->
+                <!--next card!-->
                 <div class="col s4 m4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/cardpics/card6.jpeg" alt="Mrs. Vidyavathi G T">
+                            <img class="activator" src="images/cardpics/card6.jpeg" alt="Mrs. Vidyavathi G T">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4"> Mrs. Vidyavathi G T<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4"> Mrs. Vidyavathi G T<i class="material-icons right">close</i>
-                          </span>
-                          <table class="bordered responsive-table">
-                            <tbody id="para">
-                              <tr>
-                                <td><b>Designation</b></td>
-                                <td>Assistant Professor</td>
-                              </tr>
-                              <tr>
-                                <td><b>Qualifications</b></td>
-                                <td>M.Sc</td>
-                              </tr>
-                              <tr>
-                                <td><b>Total Experience</b></td>
-                                <td>Teaching : 3 years</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                      </div>
-                  </div>
+                            <span class="card-title grey-text text-darken-4"> Mrs. Vidyavathi G T<i class="material-icons right">close</i>
+                              </span>
+                            <table class="bordered responsive-table">
+                                <tbody id="para">
+                                    <tr>
+                                        <td><b>Designation</b>
+                                        </td>
+                                        <td>Assistant Professor</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Qualifications</b>
+                                        </td>
+                                        <td>M.Sc</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Total Experience</b>
+                                        </td>
+                                        <td>Teaching : 3 years</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-              
+            </div>
 
-              <div class="row">
-                    <h5><p><b>Technical and Non-Teaching Staff</b></p></h5>
-                </div>
-              <div class="row">
+            <div class="row">
+                <h5><p><b>Technical and Non-Teaching Staff</b></p></h5>
+            </div>
+            <div class="row">
                 <div class="col s4 m4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/cardpics/card7.jpeg" alt=" Mrs. Suma Raghavendra">
+                            <img class="activator" src="images/cardpics/card7.jpeg" alt=" Mrs. Suma Raghavendra">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4"> Mrs. Suma Raghavendra<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4"> Mrs. Suma Raghavendra<i class="material-icons right">close</i>
-                          </span>
-                          <table class="bordered responsive-table">
-                            <tbody id="para">
-                              <tr>
-                                <td><b>Designation</b></td>
-                                <td>Instructor</td>
-                              </tr>
-                              <tr>
-                                <td><b>Qualification With Class/Grade</b></td>
-                                <td>B.Sc, M.Sc, (Ph.D)</td>
-                              </tr>
-                              <tr>
-                                <td><b>Contact No. / E-Mail</b></td>
-                                <td>sraug19@gmail.com</td>
-                              </tr>
-                              <tr>
-                                <td><b>Professional Experience</b></td>
-                                <td>6 years</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                      </div>
-                  </div>
+                            <span class="card-title grey-text text-darken-4"> Mrs. Suma Raghavendra<i class="material-icons right">close</i>
+                            </span>
+                            <table class="bordered responsive-table">
+                                <tbody id="para">
+                                    <tr>
+                                        <td><b>Designation</b></td>
+                                        <td>Instructor</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Qualification With Class/Grade</b></td>
+                                        <td>B.Sc, M.Sc, (Ph.D)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Contact No. / E-Mail</b></td>
+                                        <td>sraug19@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Professional Experience</b></td>
+                                        <td>6 years</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-<!--next card!-->
+                    <!--next card!-->
                 <div class="col s4 m4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/cardpics/card8.jpeg" alt="Mr. Gnanesh S K">
+                            <img class="activator" src="images/cardpics/card8.jpeg" alt="Mr. Gnanesh S K">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Mr. Gnanesh S K <i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">Mr. Gnanesh S K <i class="material-icons right">close</i>
-                          </span>
-                          <table class="bordered responsive-table">
-                            <tbody id="para">
-                              <tr>
-                                <td><b>Designation</b></td>
-                                <td>Asst. Instructor</td>
-                              </tr>
-                              <tr>
-                                <td><b>Qualification With Class/Grade</b></td>
-                                <td>B.Sc</td>
-                              </tr>
-                              <tr>
-                                <td><b>Professional Experience</b></td>
-                                <td>35 years</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                      </div>
-                  </div>
+                            <span class="card-title grey-text text-darken-4">Mr. Gnanesh S K <i class="material-icons right">close</i></span>
+                            <table class="bordered responsive-table">
+                                <tbody id="para">
+                                    <tr>
+                                        <td><b>Designation</b></td>
+                                        <td>Asst. Instructor</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Qualification With Class/Grade</b></td>
+                                        <td>B.Sc</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Professional Experience</b></td>
+                                        <td>35 years</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-<!--next card!-->
+                    <!--next card!-->
                 <div class="col s4 m4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/cardpics/card8.jpeg" alt="Mr. Chandra">
+                            <img class="activator" src="images/cardpics/card8.jpeg" alt="Mr. Chandra">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Mr. Chandra<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">Mr. Chandra<i class="material-icons right">close</i>
-                          </span>
-                          <table class="bordered responsive-table">
-                            <tbody id="para">
-                              <tr>
-                                <td><b>Designation</b></td>
-                                <td>Semi Skilled Lab Assistant (Mechanic)</td>
-                              </tr>
-                              <tr>
-                                <td><b>Qualification With Class/Grade</b></td>
-                                <td>SSLC</td>
-                              </tr>
-                              <tr>
-                                <td><b>Professional Experience</b></td>
-                                <td>25 years</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                      </div>
-                  </div>
+                            <span class="card-title grey-text text-darken-4">Mr. Chandra<i class="material-icons right">close</i></span>
+                            <table class="bordered responsive-table">
+                                <tbody id="para">
+                                    <tr>
+                                        <td><b>Designation</b></td>
+                                        <td>Semi Skilled Lab Assistant (Mechanic)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Qualification With Class/Grade</b></td>
+                                        <td>SSLC</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Professional Experience</b></td>
+                                        <td>25 years</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-<!--next card!-->
+                    <!--next card!-->
                 <div class="col s4 m4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="images/cardpics/card10.jpeg" alt="Mr. Siddaraju">
+                            <img class="activator" src="images/cardpics/card10.jpeg" alt="Mr. Siddaraju">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Mr. Siddaraju<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Mr. Siddaraju<i class="material-icons right">close</i>
-                            </span>
+                            <span class="card-title grey-text text-darken-4">Mr. Siddaraju<i class="material-icons right">close</i></span>
                             <table class="bordered responsive-table">
-                              <tbody id="para">
-                                <tr>
-                                  <td><b>Designation</b></td>
-                                  <td>Helper</td>
-                                </tr>
-                                <tr>
-                                  <td><b>Qualification With Class/Grade</b></td>
-                                  <td>SSLC</td>
-                                </tr>
-                                <tr>
-                                  <td><b>Professional Experience</b></td>
-                                  <td>5 years</td>
-                                </tr>
-                              </tbody>
+                                <tbody id="para">
+                                    <tr>
+                                        <td><b>Designation</b></td>
+                                        <td>Helper</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Qualification With Class/Grade</b></td>
+                                        <td>SSLC</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Professional Experience</b></td>
+                                        <td>5 years</td>
+                                    </tr>
+                                </tbody>
                             </table>
-                        
                         </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
 
+        <div id="fot">
+        <footer id="footer" class="page-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col l4 m4 s12">
+            <h5 class="orange-text">RNSIT</h5>
+            <p class="white-text text-lighten-4">R.N. Shetty Institute of Technology (RNSIT) established in the year 2001, is the brain-child of the Group Chairman, Dr. R.N. Shetty.The Murudeshwar Group of Companies headed by Sri. R. N. Shetty is a leading player in many industries viz construction, manufacturing, hotel, automobile, power & IT services and education. The group has contributed significantly to the field of education.</p>
 
+
+<button name="action" class="btn waves-effect waves-light black lighten-3" type="submit" alt="Compliment">COMPLIMENT</button>
+
+
+
+
+
+          </div>
+          <div class="col l4 m4 s12 push-m1 push-l1">
+            <h5 class="orange-text">HELP</h5>
+            <p class="grey-text text-lighten-4"></p>
+            <ul>
+                  <li><a class="white-text text-lighten-3" href="#!">HOME</a></li>
+                  <li><a class="white-text text-lighten-3" href="#!">ABOUT</a></li>
+                  <li><a class="white-text text-lighten-3" href="#!">DEPT</a></li>
+                  <li><a class="white-text text-lighten-3" href="#!">COURSE</a></li>
+            </ul>
+            <a class="btn waves-effect waves-light black lighten-3" href="#!">Email</a>
+          </div>
+          <div class="col l4 m4 s12" style="overflow: hidden;">
+            <h5 class="orange-text">Connect</h5>
+            <a href="https://www.facebook.com/pages/RNS-Institute-of-Technology/143512852331957"><image class="icon" src="images/facebook.svg" alt="fb"></image></a>
+            <a href="instagram/rnsit"><image class="icon" src="images/instagram.svg" alt="insta"></image></a>
+            <a href="twitter/rnsit"><image class="icon" src="images/twitter.svg" alt="twitter"></image></a>
+            <a href="mailto:principal@rnsit.ac.in"><image class="icon" src="images/gmail.svg" alt="gmail"></image></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p style="text-align:center"><b>Handcrafted by Dept of CSE</b></p>
+        </div>
+      </div>
+    </footer>
+    </div>
+
+
+
+
+    <script src="js/mainpage.js"></script>
+    </body>
 </html>
