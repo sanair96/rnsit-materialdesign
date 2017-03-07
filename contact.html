@@ -21,6 +21,8 @@
    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mada" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/aboutus.css">
+    <link rel="stylesheet" type="text/css" href="css/transport.css">
     <link href="images/logo.png" rel="icon" type="image/png">
     <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -46,14 +48,14 @@
    </head>
    <body>
 
-   <div class="navbar-fixed">
+   <div>
      <nav class="nav-extended">
     <div class="nav-wrapper">
       <img class="svg-logo" src="images/RNSIT.svg" alt="rnsit logo" style="height: 65px; width: 65px;">
-      <a href="#" class="brand-logo" style="color: white; margin-left:0px; ">RNSIT</a>
+      <a href="index.html" class="brand-logo" style="color: white; margin-left:0px; ">RNSIT</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a id="home" href="index.html">Home</a></li>
+        <!-- <li><a id="home" href="index.html">Home</a></li> -->
         <li><a id="aboutus" href="aboutus.html">About US</a></li>
         <li><a id="contact" onclick="navig('contact');" href="contact.html">Contact</a></li>
 
@@ -92,7 +94,7 @@
   <ul id="dropdown2" class="dropdown-content">
     <li><a id="cse" href="alumni.html">ALUMNI</a></li>
     <li><a id="ece" href="admissions.html">ADMISSIONS</a></li>
-    <li><a id="eee" href="placements.html">PLACEMENTS</a></li>
+    <li><a id="eee" href="hr.html">HR</a></li>
     <li><a id="ise" href="library.html">LIBRARY</a></li>
     <li><a id="eie" href="hostel.html">HOSTEL</a></li>
     <li><a id="mech" href="transport.html">TRANSPORT</a></li>
@@ -102,7 +104,7 @@
 
      <!--mobile!-->
       <ul class="side-nav" id="mobile-demo">
-        <li><a id="home" href="index.html">Home</a></li>
+        <li><a id="home" href="home.html">Home</a></li>
         <li><a id="aboutus" href="aboutus.html">About US</a></li>
         <li><a id="contact" href="contact.html">Contact</a></li>
         <li><a class="dropNav">Departments<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -132,7 +134,7 @@
          <li class="innerli">      <div class="innerNav1">
           <a id="cse" class="nava" href="alumni.html">Alumini</a>
           <a id="cse" class="nava" href="admissions.html">Admissions</a>
-          <a id="cse" class="nava" href="placements.hrml">Placement</a>
+          <a id="cse" class="nava" href="hr.hrml">HR</a>
           <a id="cse" class="nava" href="library.html">Library</a>
           <a id="cse" class="nava" href="hostel.html">Hostel</a>
           <a id="cse" class="nava" href="transport.html">Transport</a>
@@ -146,8 +148,10 @@
   </nav>
   </div>
 
+
 <div class="container">
  <div class="row">
+ <h4 align="center">CONTACT US</h4>
  <p style="text-align:center;"><b>Drop a Note Here!!</b></p>
     <form class="col s12" name="contactform" method="post" action="send_my_email.php">
       <div class="row">
