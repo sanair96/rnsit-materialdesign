@@ -2,17 +2,44 @@ h4
 {
 	color:#009688;
 	font-family: 'bree serif',serif;
+
 }
 #para
 {
-	font-family: 'open-sans',sans-serif;
 	color:#3e2723;
-}
 }
 #sub
 {
 	font-family: 'bree serif',serif;
 	color:#222222;
+}
+i
+{
+	position:relative;
+	top:5px;
+}
+#spara
+{
+	font-size: 3vh;
+}
+.icon{
+	width: 50px;
+}
+#also
+{
+	background-color:#021B38;	
+}
+#footer
+{
+	width:100%;
+	bottom:0;
+  z-index: 2000;
+  height:30%;
+  background-color:#021B38;
+
+}
+.division second{
+	height: 900px !important;
 }
 @media screen and (max-width: 768px){
   h4{
@@ -23,3 +50,5 @@ h4
 }
 
 }
+
+
